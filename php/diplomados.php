@@ -22,6 +22,7 @@ include '_header.php';
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
         Ver más información
         </button>
+        <a class="btn btn-primary mt-2" href="pago.php" role="button">Pagar</a>
         <!-- Modal -->
         <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
@@ -103,6 +104,7 @@ include '_header.php';
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
         Ver más información
         </button>
+        <a class="btn btn-primary mt-2" href="pago.php" role="button">Pagar</a>
         <!-- Modal -->
         <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">

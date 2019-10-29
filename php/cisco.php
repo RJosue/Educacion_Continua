@@ -63,10 +63,10 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">CCNA Routing and Switching
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
                 </li>
                 <li class="list-group-item">Networking Essentials
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
             </ul>
 
@@ -79,13 +79,13 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">CCNP Routing and Switching
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
                 </li>
                 <li class="list-group-item">Switching
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
                 <li class="list-group-item">Troubleshooting
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
             </ul>
         </div>
@@ -97,16 +97,16 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Introducción a la Ciberseguridad
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
                 </li>
                 <li class="list-group-item">Fundamentos de Ciberseguridad
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
                 <li class="list-group-item">Cibersecurity Operations
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
                 <li class="list-group-item">CCNA Security
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
             </ul>
         </div>
@@ -121,16 +121,16 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Linux Unhatched
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
                 </li>
                 <li class="list-group-item"> Linux Essentials
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
                 <li class="list-group-item"> Linux I
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
                 <li class="list-group-item"> Linux II
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
             </ul>
 
@@ -143,13 +143,13 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">IT Essentials (Hardware & Software)
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
                 </li>
                 <li class="list-group-item">Get Conected
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
                 <li class="list-group-item">Internet de las Cosas
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
             </ul>
         </div>
@@ -161,10 +161,10 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Sea su propio Jefe
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
                 </li>
                 <li class="list-group-item">Emprendimiento
-                        <div class="float-right"><a href="#" class="card-link">Pagar</a></div>           
+                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
                 </li>
             </ul>
         </div>
