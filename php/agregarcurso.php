@@ -1,5 +1,5 @@
 <?php
-$titulo = "";
+$titulo = "Agregar Curso";
 include '_header.php'; 
 ?>
 
