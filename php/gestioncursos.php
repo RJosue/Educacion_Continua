@@ -1,8 +1,8 @@
 <?php
 $titulo = "Gestion de Cursos";
-include 'php/_header.php'; 
+include '_header.php'; 
 ?>
 
 <?php 
-include 'php/_footer.php';
+include '_footer.php';
  ?>

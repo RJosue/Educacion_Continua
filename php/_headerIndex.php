@@ -8,21 +8,22 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="../img/favicon.png" rel="icon">
-  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="../css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
 
 
 </head>
@@ -43,25 +44,25 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class=""><a href="../index.php">Inicio</a></li>
+          <li class="menu-active"><a href="index.php">Inicio</a></li>
           <li class="menu-has-children"><a href="#about">Capacitaciones</a>
           <ul>
-            <li><a href="diplomados.php">Diplomados</a></li>
-            <li><a href="cisco.php">Cisco</a></li>
-            <li><a href="techacademy.php">Tech Academy</a></li> 
-            <li><a href="cursos.php">Cursos</a></li>
+            <li><a href="php/diplomados.php">Diplomados</a></li>
+            <li><a href="php/cisco.php">Cisco</a></li>
+            <li><a href="php/techacademy.php">Tech Academy</a></li> 
+            <li><a href="php/cursos.php">Cursos</a></li>
           </ul>
           </li>
           <li class="menu-has-children"><a href="#">Administracion</a>
           <ul>
-            <li><a href="agregarcurso.php">Agregar Curso</a></li>
-            <li><a href="roles.php">Administrar Roles</a></li>
-            <li><a href="estadisticas.php">Estadisticas</a></li>
+            <li><a href="php/agregarcurso.php">Agregar Curso</a></li>
+            <li><a href="php/roles.php">Administrar Roles</a></li>
+            <li><a href="php/estadisticas.php">Estadisticas</a></li>
           </ul>
           </li>
-          <li><a href="gestioncursos.php">Gestion de Curso</a></li>
-          <li><a href="horario.php">Horario</a></li>
-          <li><a href="sugerencia.php">Sugerencias</a></li>
+          <li><a href="php/gestioncursos.php">Gestion de Curso</a></li>
+          <li><a href="php/horario.php">Horario</a></li>
+          <li><a href="php/sugerencia.php">Sugerencias</a></li>
           <li class="dropdown">  <!--  LOGIN MODAL TEST-->
             <a href="">INICIAR SESION</a>
             <div class="dropdown-content">            
