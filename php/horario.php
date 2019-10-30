@@ -3,8 +3,8 @@ $titulo = "Horario";
 include '_header.php'; 
 ?>
 
-<div style="height: 90%; width:95%; margin: 0 auto; margin-top: 8%;">
-<table id="customers">
+<div style="height: 90%; width:95%; margin: 0 auto;">
+<table id="customers" class="mt-3">
   <tr>
     <th>Hora</th>
     <th>Lunes</th>
