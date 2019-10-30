@@ -10,7 +10,10 @@
   <script src="../lib/counterup/counterup.min.js"></script>
   <script src="../lib/superfish/hoverIntent.js"></script>
   <script src="../lib/superfish/superfish.min.js"></script>
-
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.src.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script> 
   <!-- Contact Form JavaScript File -->
   <script src="../contactform/contactform.js"></script>
 
