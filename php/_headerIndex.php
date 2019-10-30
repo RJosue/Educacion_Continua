@@ -50,7 +50,6 @@
             <li><a href="php/diplomados.php">Diplomados</a></li>
             <li><a href="php/cisco.php">Cisco</a></li>
             <li><a href="php/techacademy.php">Tech Academy</a></li> 
-            <li><a href="php/cursos.php">Cursos</a></li>
           </ul>
           </li>
           <li class="menu-has-children"><a href="#">Administracion</a>
@@ -63,7 +62,7 @@
           <li><a href="php/gestioncursos.php">Gestion de Curso</a></li>
           <li><a href="php/horario.php">Horario</a></li>
           <li><a href="php/sugerencia.php">Sugerencias</a></li>
-          <li class="dropdown">  <!--  LOGIN MODAL TEST-->
+          <li class="dropdown ">  <!--  LOGIN MODAL TEST-->
             <a href="">INICIAR SESION</a>
             <div class="dropdown-content">            
               <h4>INICIAR SESION</h4>
