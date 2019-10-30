@@ -1,14 +1,13 @@
-
-  <div class="container follow-us-container">
+<div class="container follow-us-container">
     <div class="text-center follow-us">
-        ¡Siguenos!
+        Follow Us
     </div>
     <br />
     <div class="text-center">
         <a class="fa fa-facebook social-icon" href="#" target="_blank"></a>
         <a class="fa fa-twitter social-icon" href="#" target="_blank"></a>
-        <a class="fa fa-instagram social-icon" href="#" target="_blank"></a>
-
+        <a class="fa fa-linkedin social-icon" href="#" target="_blank"></a>
+        <a class="fa fa-google-plus social-icon" href="#" target="_blank"></a>
     </div>
 </div>
 
@@ -45,25 +44,25 @@
         border-color: #434343;
     }
 </style>
+
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <script src="../lib/jquery/jquery.min.js"></script>
-  <script src="../lib/jquery/jquery-migrate.min.js"></script>
-  <script src="../lib/jquery/jquery-1.10.2.min.js"></script>
-  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../lib/easing/easing.min.js"></script>
-  <script src="../lib/wow/wow.min.js"></script>
-  <script src="../lib/waypoints/waypoints.min.js"></script>
-  <script src="../lib/counterup/counterup.min.js"></script>
-  <script src="../lib/superfish/hoverIntent.js"></script>
-  <script src="../lib/superfish/superfish.min.js"></script>
+  <script src="../../Public/lib/jquery/jquery.min.js"></script>
+  <script src="../../Public/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../../Public/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../Public/lib/easing/easing.min.js"></script>
+  <script src="../../Public/lib/wow/wow.min.js"></script>
+  <script src="../../Public/lib/waypoints/waypoints.min.js"></script>
+  <script src="../../Public/lib/counterup/counterup.min.js"></script>
+  <script src="../../Public/lib/superfish/hoverIntent.js"></script>
+  <script src="../../Public/lib/superfish/superfish.min.js"></script>
 
   <!-- Contact Form JavaScript File -->
-  <script src="../contactform/contactform.js"></script>
+  <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="../js/main.js"></script>
+  <script src="../../Public/js/main.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 $titulo = "Cursos de Diplomados";
-include '_header.php'; 
+include 'Partials/_header.php'; 
 ?>
 
 <div class="container mt-3">

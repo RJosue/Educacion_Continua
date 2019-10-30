@@ -7,7 +7,7 @@ Chan
 
 Raull
 	Inicio
-	Administrar roles
+	Administrar roles (cambiar div de los rolea a la derecha)
 	Pago
 	https://www.youtube.com/watch?v=HTY4IbFyE1w
 	https://getbootstrap.com/docs/4.3/examples/offcanvas/ (Cambiar roles)

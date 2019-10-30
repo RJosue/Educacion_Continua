@@ -1,9 +1,9 @@
 <?php 
 
 $titulo = "Educacion Continua";
-include 'php/_headerIndex.php'; ?>
+include 'php/Partials/_headerIndex.php'; ?>
 
-<link rel="stylesheet" type="text/css" href="css/Index.css">
+<link rel="stylesheet" type="text/css" href="Public/css/Index.css">
 
 
   <!--==========================  <a href="#about" class="btn-get-started">Get Started</a>
