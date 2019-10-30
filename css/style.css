@@ -505,7 +505,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999;
 }
 
-/* LOGIN NUEVO */
+/* LOGIN NUEVO*/
 .dropdown {
   position: relative;
   display: inline-block;
@@ -526,4 +526,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.shadow {
+   background-color: #f9f9f9;
+   margin-top: 10x;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   padding: 12px 16px 24px;
 }

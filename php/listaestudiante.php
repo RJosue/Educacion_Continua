@@ -2,7 +2,7 @@
 $titulo = "Lista de Estudiantes";
 include '_header.php'; 
 ?>
-<div class="container">
+<div class="container shadow">
 <style type="text/css">
 	td + td + td{
 		border-left: 1px solid;
@@ -52,7 +52,8 @@ include '_header.php';
 </table>
 	<button class="btn btn-secondary float-right ml-1"><a href="../lib/certificado/certificar.php" target="_blank">Certificar Estudiantes</a></button>
 	<button class="btn btn-secondary float-right"><a href="">Imprimir Lista</a></button>
-
+  <br>
+</div>
 <script type='text/javascript'>
 
  // Set check or unchecked all checkboxes
