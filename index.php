@@ -116,7 +116,6 @@ include 'php/_headerIndex.php'; ?>
 </div>
 </div>
 
-
 <?php 
 include 'php/_footerIndex.php';
  ?>
