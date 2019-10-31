@@ -4,51 +4,66 @@ include '_header.php';
 ?>
 <html>
    
+<head>
 
 
-<head></head>
+<style type="text/css"> 
+.shadow {
+   background-color: #f9f9f9;
+   margin-top: 10x;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   padding: 12px 16px 24px;
+}
+input[type=text]{
+   
+}
+
+</style>
+</head>
 <body>
-<div class="container mt-3">
-    <form>
-       
-    <div class="input-group mb-3">
+<div class="container shadow mt-3">
+    <form class="mx-auto">
+    <br>
+    <h2 class=""style="margin-left:60px;">Registro de Estudiantes</h2>
+    <div class="input-group mb-4 mx-auto" style="width:550px">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Datos</span>
                 </div>
                 <input type="text" aria-label="First name" class="form-control" placeholder="Nombre">
                 <input type="text" aria-label="Last name" class="form-control"placeholder="Apellido "> 
+    </div>
+            <div class="">
+                
+                <div class="form-check-inline">
+               
+                   <label class="form-check-label" for="radio1">
+                      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Masculino
+                   </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label" for="radio2">
+                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Femenino
+                    </label>
+                </div>
+                
             </div>
 
-            <label for="exampleFormControlTextarea1">Sexo:</label>
-        <div class="form-check form-check-inline">
-        
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-        <label class="form-check-label" for="inlineRadio1">  Masculino</label>
-        </div>
-        <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-        <label class="form-check-label" for="inlineRadio2">Femenino</label>
-        </div>
-        <div class="form-check form-check-inline">
-        </div>
-
-
-        <div class="input-group mb-3">
+        <div class="input-group mb-4 mx-auto"style="width:550px">
                 <div class="input-group-text">
                     <span class="input-group-date">Fecha de Nacimiento</span>
                 </div>
                 <input type="date" aria-label="First name" class="form-control" placeholder="Nombre"> 
             </div>
         
-            <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Celular</span>
-            </div>
+            <div class="input-group mb-4 mx-auto" style="width:550px">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Celular</span>
+                </div>
             <input type="phone" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="5555-5555">
             </div>
            
 
-            <div class="input-group mb-3">
+            <div class="input-group mb-4 mx-auto" style="width:550px">
             <label class="input-group-text" for="inputGroupSelect01">Facultad</label>
             <select class="custom-select" id="inputGroupSelect01" placeholder="elija un salon">
                
@@ -62,7 +77,7 @@ include '_header.php';
             </select>
             </div>
               
-            <div class="input-group mb-3">
+            <div class="input-group mb-4 mx-auto" style="width:550px">
             <label class="input-group-text" for="inputGroupSelect01">Carrera</label>
             <select class="custom-select" id="inputGroupSelect01" placeholder="elija un salon">
                
@@ -75,7 +90,7 @@ include '_header.php';
 
             </select>
             </div>
-            <div class="input-group mb-3">
+            <div class="input-group mb-4 mx-auto"style="width:550px">
             <label class="input-group-text" for="inputGroupSelect01">Nivel Curado</label>
             <select class="custom-select" id="inputGroupSelect01" placeholder="elija un salon">
                
@@ -88,7 +103,9 @@ include '_header.php';
 
             </select>
             </div>
-        <button type="submit" class="btn btn-primary">Guardar</button>
+            <br>     
+        <button type="submit" class="btn btn-primary float-right" style="width:250px; margin-right:60px; margin-buttom:25px;">Guardar</button>
+        <br>
         </form>
     </div>
        

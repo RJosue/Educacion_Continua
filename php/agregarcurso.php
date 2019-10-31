@@ -6,26 +6,43 @@ include '_header.php';
    
 
 
-<head></head>
+<head>
+
+
+<style type="text/css"> 
+.shadow {
+   background-color: #f9f9f9;
+   margin-top: 10x;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   padding: 12px 16px 24px;
+}
+input[type=text]{
+   
+}
+
+</style>
+</head>
 <body>
-<div class="container mt-3">
-    <form>
+
+<div class="container shadow mt-3" style="">
+
+    <form  style="margin-bottom:25px;">
+    <h2 class=""style="margin-left:60px;">Agregar cursos</h2>
        
-        
-        <div class="input-group mb-3">
+        <div class="input-group mx-auto" style="width:550px">
            <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-default">Nombre del curso</span>
            </div>
            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
         </div>
 
-        <div class="form-group">
+        <div class="form-group mx-auto" style="width:550px;">
         <label for="exampleFormControlTextarea1">Descripcion del curso</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="escriba una breve descripcion del curso"></textarea>
         </div>
 
   
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 mx-auto"style="width:550px;">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroupFileAddon01">Plan de Contenido</span>
             </div>
@@ -36,7 +53,7 @@ include '_header.php';
             </div>
 
 
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 mx-auto"style="width:550px;">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroupFileAddon01">Plan de Costos</span>
             </div>
@@ -46,7 +63,7 @@ include '_header.php';
             </div>
             </div>
 
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 mx-auto"style="width:550px;">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Datos del Profesor</span>
                 </div>
@@ -56,7 +73,7 @@ include '_header.php';
              
             
 
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 mx-auto"style="width:550px;">
             <label class="input-group-text" for="inputGroupSelect01">Aula de clases</label>
             <select class="custom-select" id="inputGroupSelect01" placeholder="elija un salon">
                 <option selected>A</option>
@@ -67,29 +84,26 @@ include '_header.php';
             </div>
               
 
-            <div class="input-group mb-3">
-            
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Minimo de Estudiantes</label>
-            </div>
-            <input type="text" aria-label="Last name" class="form-control"placeholder=""> 
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01">Minimo de Estudiantes</label>
-            </div>
-            <input type="text" aria-label="Last name" class="form-control"placeholder=""> 
-            </div>
-
+            <div class="input-group mb-3 mx-auto"style="width:550px;">
+           <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Cantidad minima de estudiantes</span>
+           </div>
+           <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+           </div>
+             
+           <div class="input-group mb-1 mx-auto"style="width:550px;">
+           <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Cantidad maxima de estudiantes</span>
+           </div>
+           <input type="text" class="form-control mb" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+           </div>
            
-        <button type="submit" class="btn btn-primary">Guardar</button>
+          <br>     
+        <button type="submit" class="btn btn-primary float-right" style="width:250px; margin-right:60px; margin-buttom:25px;">Guardar</button>
+        <br>
         </form>
     </div>
        
-
-       
-
-
-
-
 </body>
 </html>
 
