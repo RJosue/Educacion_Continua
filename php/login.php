@@ -136,7 +136,7 @@ color:#2dc997;
 				</div>
 			</div>
 			<div class="card-body">
-				<form>
+				<form action="">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
