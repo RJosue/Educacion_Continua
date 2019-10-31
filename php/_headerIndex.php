@@ -52,7 +52,7 @@
             <li><a href="php/techacademy.php">Tech Academy</a></li> 
           </ul>
           </li>
-          <li class="menu-has-children"><a href="#">Administracion</a>
+          <li class="menu-has-children"><a href="">Administracion</a>
           <ul>
             <li><a href="php/agregarcurso.php">Agregar Curso</a></li>
             <li><a href="php/roles.php">Administrar Roles</a></li>
