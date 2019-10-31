@@ -1,6 +1,9 @@
 <div class="container follow-us-container">
     <div class="text-center follow-us">
-        Follow Us
+    <img class="logos" src="img/LogoFisc_UTP.png">
+        <img class="logos" src="img/Logo_UTP.png">
+        <br>
+        <small>¡Siguenos!</small>
     </div>
     <br />
     <div class="text-center">
@@ -9,9 +12,6 @@
         <a class="fa fa-linkedin social-icon" href="#" target="_blank"></a>
         <a class="fa fa-google-plus social-icon" href="#" target="_blank"></a>
     </div>
-
-    <img src="..\img\agile.jpg" class="rounded float-left">
-<img src="../img/agile.jpg" class="rounded float-right">
 </div>
 
 <style>
@@ -27,6 +27,18 @@
         color: #777;
     }
 
+    .logos
+    {
+
+        font-size: 16px;
+        text-align: center;
+        width: 64px;
+        height: 64px;
+        border: 2px solid #777;
+        border-radius: 50%;
+        color: #777;
+        margin: 2px;
+    }
     .social-icon
     {
         padding-top: 6px;

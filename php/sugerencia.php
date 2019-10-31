@@ -6,7 +6,7 @@ include '_header.php';
 
 <!------ Include the above in your HEAD tag ---------->
 
-	<div class="container text-center" >
+	<div class="container shadow text-center" >
 		<div class="alert alert-warning alert-dismissible" role="alert">
 	        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 	        Solo puedes votar una sola ves. Una ves has votado se desabilitara el boton de votar, solo podras ver los resultados. Se volvera a habilitar la opcion de votar apenas se empiece una nueva lista de votacion. Puedes realizar 3 sugerencias cada semestre.
@@ -90,7 +90,7 @@ include '_header.php';
 
     	</div>
     </div>
-
+</div>
 <?php 
 include '_footer.php';
  ?>
