@@ -21,6 +21,7 @@ include '_header.php';
         <th scope="col">Nombre</th>
         <th scope="col">Apellido</th>
         <th scope="col">Cedula</th>
+        <th scope="col">Rol</th>
       </tr>
     </thead>
     <tbody style="cursor:pointer">
@@ -29,25 +30,21 @@ include '_header.php';
         <td>Luis</td>
         <td>Munguia</td>
         <td>8-954-585</td>
+        <td>
+        <div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Seleccionar rol
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Estudiante</a>
+    <a class="dropdown-item" href="#">Facilitador</a>
+    <a class="dropdown-item" href="#">Administrativo</a>
+  </div>
+</div>
+</td>
       </tr>
     </tbody>
 </table>
-      <!-- RESULTADOS -->
-
-      <div class="card mt-3 mb-4">
-          <div class="card-header">
-            <h5>Seleccionar Rol</h5>
-          </div>
-          <div class="card-body">
-            <blockquote class="blockquote mb-0">
-              <input type="radio" name="gender" value="male"> Estudiante<br>
-              <input type="radio" name="gender" value="male"> Facilitador<br>
-              <input type="radio" name="gender" value="male"> Administrativo<br>
-              <button type="button ml-4" class="btn btn-success ">Cambiar</button>
-            </blockquote>
-            
-          </div>
-      </div>
     </div>
 <?php 
 include '_footer.php';

@@ -25,7 +25,9 @@ include '_header.php';
                                 </ul>
                             </div>                    
                         </div>
-                        <a class="btn btn-primary mt-2" href="pago.php" role="button">Pagar</a>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>
                     </div>
                 </div>
             </div>
@@ -48,7 +50,11 @@ include '_header.php';
                                     </ul>
                                 </div>                    
                             </div>
-                            <a class="btn btn-primary mt-2" href="pago.php" role="button">Pagar</a>
+
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>
+
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -76,8 +82,12 @@ include '_header.php';
                                 </ul>
                             </div>                    
                         </div>
-                        <a class="btn btn-primary mt-2" href="pago.php" role="button">Pagar</a>
-                    </div>
+                    
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>
+
+                        </div>
                 </div>
             </div>
         </div>
@@ -100,7 +110,11 @@ include '_header.php';
                                     </ul>
                                 </div>                    
                             </div>
-                            <a class="btn btn-primary mt-2" href="pago.php" role="button">Pagar</a>
+                            
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>
+
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -108,6 +122,67 @@ include '_header.php';
                     </div>
                 </div>
         </div>
+
+
+        <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+      <div class="card-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+        <h4>Facturación</h4>
+        
+      </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+              Datos del usuario
+              </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Nombre:</li>
+                  <li class="list-group-item">Apellido:</li>
+                  <li class="list-group-item">Cedula:</li>
+                  <li class="list-group-item">Email:</li>
+                  <li class="list-group-item">Fecha de Nacimiento:</li>
+                </ul>
+            </div>  
+          </blockquote>
+          <blockquote class="blockquote mb-0 mt-4">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+              Datos del Curso
+              </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Nombre del curso:</li>
+                  <li class="list-group-item">Descripción:</li>
+                  <li class="list-group-item">Duración:</li>
+                </ul>
+            </div>  
+          </blockquote>
+
+          <blockquote class="blockquote mb-0 mt-4">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+              Pago
+              </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">SubTotal:</li>
+                  <li class="list-group-item">ITBMS:</li>
+                  <li class="list-group-item">Total:</li>
+                </ul>
+            </div>  
+          </blockquote>
+          
+        </div>
+          <!-- BOTON DE PAGO -->
+          <button type="buttons" class="btn btn-secondary">PAGAR</button>
+      </div>
+    </div>
+  </div>
+  </div>
 
 
     </div>

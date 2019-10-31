@@ -9,6 +9,9 @@
         <a class="fa fa-linkedin social-icon" href="#" target="_blank"></a>
         <a class="fa fa-google-plus social-icon" href="#" target="_blank"></a>
     </div>
+
+    <img src="..\img\agile.jpg" class="rounded float-left">
+<img src="../img/agile.jpg" class="rounded float-right">
 </div>
 
 <style>

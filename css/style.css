@@ -576,4 +576,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: rgba(104,26,93, 0.9);
   border-color: #FFFFFF;
 }
-
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255,255,255);
+}
