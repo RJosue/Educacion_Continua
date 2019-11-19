@@ -22,10 +22,12 @@ input[type=text]{
 </head>
 <body>
 <div class="container shadow mt-3">
-    <form class="mx-auto">
+
     <br>
-    <h2 class=""style="margin-left:60px;">Registro de Estudiantes</h2>
-    <div class="input-group mb-4 mx-auto" style="width:550px">
+    <form class="mx-auto">
+    <h2 class=""style="margin-left:60px;">Registrarse</h2>
+    <div class="container" style="width:55%">
+    <div class="input-group mb-4 mx-auto" style="">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Datos</span>
                 </div>
@@ -48,14 +50,14 @@ input[type=text]{
                 
             </div>
 
-        <div class="input-group mb-4 mx-auto"style="width:550px">
+        <div class="input-group mb-4 mx-auto"style="">
                 <div class="input-group-text">
                     <span class="input-group-date">Fecha de Nacimiento</span>
                 </div>
                 <input type="date" aria-label="First name" class="form-control" placeholder="Nombre"> 
             </div>
         
-            <div class="input-group mb-4 mx-auto" style="width:550px">
+            <div class="input-group mb-4 mx-auto" style=>
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Celular</span>
                 </div>
@@ -63,7 +65,7 @@ input[type=text]{
             </div>
            
 
-            <div class="input-group mb-4 mx-auto" style="width:550px">
+            <div class="input-group mb-4 mx-auto" style="">
             <label class="input-group-text" for="inputGroupSelect01">Facultad</label>
             <select class="custom-select" id="inputGroupSelect01" placeholder="elija un salon">
                
@@ -77,7 +79,7 @@ input[type=text]{
             </select>
             </div>
               
-            <div class="input-group mb-4 mx-auto" style="width:550px">
+            <div class="input-group mb-4 mx-auto" style="width:">
             <label class="input-group-text" for="inputGroupSelect01">Carrera</label>
             <select class="custom-select" id="inputGroupSelect01" placeholder="elija un salon">
                
@@ -90,7 +92,7 @@ input[type=text]{
 
             </select>
             </div>
-            <div class="input-group mb-4 mx-auto"style="width:550px">
+            <div class="input-group mb-4 mx-auto"style="width:">
             <label class="input-group-text" for="inputGroupSelect01">Nivel Curado</label>
             <select class="custom-select" id="inputGroupSelect01" placeholder="elija un salon">
                
@@ -103,10 +105,12 @@ input[type=text]{
 
             </select>
             </div>
-            <br>     
+            <br>  
+            </div>   
         <button type="submit" class="btn btn-primary float-right" style="width:250px; margin-right:60px; margin-buttom:25px;">Guardar</button>
         <br>
         </form>
+
     </div>
        
 
