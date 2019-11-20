@@ -62,8 +62,8 @@
           <li><a href="php/gestioncursos.php">Gestion de Curso</a></li>
           <li><a href="php/horario.php">Horario</a></li>
           <li><a href="php/sugerencia.php">Sugerencias</a></li>
-          <li class="dropdown ">  <!--  LOGIN MODAL TEST-->
-            <a href="">INICIAR SESION</a>
+          <li class="dropdown2" id="dropdwn">  <!--  LOGIN MODAL TEST-->
+            <p> INICIAR SESION</p>
             <div class="dropdown-content">            
               <h4>INICIAR SESION</h4>
               <div  class="form-group">
@@ -79,6 +79,9 @@
               </div>
             </div>
             </div>
+            <!-- <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+              Tooltip on bottom
+            </button> -->
           </li>
         </ul>
       </nav><!-- #nav-menu-container -->

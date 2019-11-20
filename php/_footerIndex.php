@@ -66,6 +66,25 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+<script>
 
+    $("#con").click(function () {
+      $(".dropdown-content").hide();
+    });
+
+  $("#dropdwn p").click( function (){
+    //   $(".dropdown-content").show();
+    //   alert("Hola");
+      if($(".dropdown-content").is(":visible")== true){
+        $(".dropdown-content").hide();
+      }
+      else{
+        $(".dropdown-content").show();
+      }
+  });
+  
+  
+
+</script>
 </body>
 </html>

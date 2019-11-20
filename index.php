@@ -9,7 +9,7 @@ include 'php/_headerIndex.php'; ?>
   <!--==========================  <a href="#about" class="btn-get-started">Get Started</a>
     Hero Section
   ============================-->
-  <div class="container">
+  <div class="container" id="con">
   <!-- IMAGEN ARRIBA -->
   <div class="card bg-white text-white mt-3 mb-3">
   <img src=img/auditorio.jpg class="card-img" alt="...">
