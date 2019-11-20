@@ -24,6 +24,9 @@
   <!-- Main Stylesheet File -->
   <link href="../css/style.css" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.src.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script> 
 
 </head>
 
@@ -36,7 +39,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="" alt="" title="" /></img></a>
+        
         <!-- Uncomment below if you prefer to use a text logo -->
         <!--<h1><a href="#hero">Regna</a></h1>-->
       </div>
@@ -49,7 +52,6 @@
             <li><a href="diplomados.php">Diplomados</a></li>
             <li><a href="cisco.php">Cisco</a></li>
             <li><a href="techacademy.php">Tech Academy</a></li> 
-            <li><a href="cursos.php">Cursos</a></li>
           </ul>
           </li>
           <li class="menu-has-children"><a href="#">Administracion</a>

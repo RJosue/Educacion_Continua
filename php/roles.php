@@ -21,7 +21,7 @@ include '_header.php';
         <th scope="col">Nombre</th>
         <th scope="col">Apellido</th>
         <th scope="col">Cedula</th>
-        <th scope="col"> Rol </th>
+        <th scope="col">Rol</th>
       </tr>
     </thead>
     <tbody style="cursor:pointer">

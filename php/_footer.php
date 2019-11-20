@@ -1,7 +1,10 @@
 
   <div class="container follow-us-container">
     <div class="text-center follow-us">
-        ¡Siguenos!
+      <img class="logos" src="../img/LogoFisc_UTP.png">
+        <img class="logos" src="../img/Logo_UTP.png">
+        <br>
+        <small>¡Siguenos!</small>
     </div>
     <br />
     <div class="text-center">
@@ -21,7 +24,7 @@
 
     .follow-us
     {
-        font-size: 32px;
+        font-size: 28px;
         color: #777;
     }
 
@@ -38,6 +41,19 @@
         margin: 5px;
     }
 
+    .logos
+    {
+
+        font-size: 16px;
+        text-align: center;
+        width: 64px;
+        height: 64px;
+        border: 2px solid #777;
+        border-radius: 50%;
+        color: #777;
+        margin: 2px;
+    }
+
     a.social-icon:hover, a.social-icon:active, a.social-icon:focus
     {
         text-decoration: none;
@@ -48,7 +64,7 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <script src="../lib/jquery/jquery.min.js"></script>
+   <script src="../lib/jquery/jquery.min.js"></script>
   <script src="../lib/jquery/jquery-migrate.min.js"></script>
   <script src="../lib/jquery/jquery-1.10.2.min.js"></script>
   <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -58,7 +74,10 @@
   <script src="../lib/counterup/counterup.min.js"></script>
   <script src="../lib/superfish/hoverIntent.js"></script>
   <script src="../lib/superfish/superfish.min.js"></script>
-
+  
+ <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+<script src="https://code.highcharts.com/highcharts.src.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script> 
   <!-- Contact Form JavaScript File -->
   <script src="../contactform/contactform.js"></script>
 

@@ -94,6 +94,65 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
 }
+
+.btn-outline-success {
+  color: rgba(104,26,93, 0.9);
+  background-color: transparent;
+  background-image: none;
+  border-color: rgba(104,26,93, 0.9);
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #2dc997;
+  border-color: #2dc997;
+}
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #2dc997;
+  border-color: #2dc997;
+}
+.shadow {
+  background-color: #f9f9f9;
+  margin-top: 10x;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px 24px;
+}
+.btn-link {
+  font-weight: 400;
+  color: rgba(104,26,93, 0.9);
+  background-color: transparent;
+}
+.btn-link:hover {
+  color: #2dc997;
+  text-decoration: underline;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-secondary {
+  color: #fff;
+  background-color:rgba(104,26,93, 0.9);
+  border-color: #FFFFFF;
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #2dc997;
+  border-color: #2dc997;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #2dc997;
+  border-color: #2dc997;
+}
+
+a:hover, a:active, a:focus {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -578,3 +637,38 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+ /* padding-top: 12px;
+  padding-bottom: 12px;*/
+  text-align: left;
+  background-color: rgba(104,26,93, 0.9);
+  color: white;
+}
+#customers td {
+ /* padding-top: 12px;
+  padding-bottom: 12px; */
+  font-size: 11px;
+  text-align: left;
+  
+}
+
+.table .thead-dark th {
+  color: #fff;
+  background-color: rgba(104,26,93, 0.9);
+  border-color: #FFFFFF;
+}

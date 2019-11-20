@@ -63,10 +63,14 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">CCNA Routing and Switching
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>
                 </li>
                 <li class="list-group-item">Networking Essentials
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>           
                 </li>
             </ul>
 
@@ -79,14 +83,20 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">CCNP Routing and Switching
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>
                 </li>
                 <li class="list-group-item">Switching
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>          
                 </li>
                 <li class="list-group-item">Troubleshooting
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
-                </li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>        
+            </li>
             </ul>
         </div>
         <div class="card mt-3 ">
@@ -97,16 +107,24 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Introducción a la Ciberseguridad
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>
                 </li>
                 <li class="list-group-item">Fundamentos de Ciberseguridad
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>         
                 </li>
                 <li class="list-group-item">Cibersecurity Operations
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>           
                 </li>
                 <li class="list-group-item">CCNA Security
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
+                        <<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>           
                 </li>
             </ul>
         </div>
@@ -121,16 +139,24 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Linux Unhatched
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>
                 </li>
                 <li class="list-group-item"> Linux Essentials
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>          
                 </li>
                 <li class="list-group-item"> Linux I
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>          
                 </li>
                 <li class="list-group-item"> Linux II
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>           
                 </li>
             </ul>
 
@@ -143,14 +169,17 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">IT Essentials (Hardware & Software)
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
-                </li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>                </li>
                 <li class="list-group-item">Get Conected
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
-                </li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>                </li>
                 <li class="list-group-item">Internet de las Cosas
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
-                </li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>                </li>
             </ul>
         </div>
         <div class="card mt-3">
@@ -161,14 +190,81 @@ include '_header.php';
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Sea su propio Jefe
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>
-                </li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>                </li>
                 <li class="list-group-item">Emprendimiento
-                        <div class="float-right"><a href="pago.php" class="card-link">Pagar</a></div>           
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                        Pagar
+                        </button>
                 </li>
             </ul>
         </div>
     </div>
+
+
+
+
+
+    <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+      <div class="card-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+        <h4>Facturación</h4>
+        
+      </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+              Datos del usuario
+              </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Nombre:</li>
+                  <li class="list-group-item">Apellido:</li>
+                  <li class="list-group-item">Cedula:</li>
+                  <li class="list-group-item">Email:</li>
+                  <li class="list-group-item">Fecha de Nacimiento:</li>
+                </ul>
+            </div>  
+          </blockquote>
+          <blockquote class="blockquote mb-0 mt-4">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+              Datos del Curso
+              </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Nombre del curso:</li>
+                  <li class="list-group-item">Descripción:</li>
+                  <li class="list-group-item">Duración:</li>
+                </ul>
+            </div>  
+          </blockquote>
+
+          <blockquote class="blockquote mb-0 mt-4">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+              Pago
+              </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">SubTotal:</li>
+                  <li class="list-group-item">ITBMS:</li>
+                  <li class="list-group-item">Total:</li>
+                </ul>
+            </div>  
+          </blockquote>
+          
+        </div>
+          <!-- BOTON DE PAGO -->
+          <button type="buttons" class="btn btn-secondary">PAGAR</button>
+      </div>
+    </div>
+  </div>
+  </div>
 
     
 </div>
