@@ -119,15 +119,25 @@ include '_header.php';
                         <option value="3">D</option>
                     </select>
                 </div>
-            </div>
+            </div>  
             <div class="form-group" id="diviniciofin">
+                <label class="control-label col-sm-6" for="esctipo">Escoga un salon:</label>
                 <label class=" control-label col-sm-5" for="hrinifin">Hora de inicio y fin:</label>
                 <div class="row" style="margin-left:0px;">
-                    <div class=" col-sm-5">
+
+                    <div class="col-sm-3">
+                        <select class="custom-select" id="esctipo">
+                            <option selected disabled>Escoga el tipo de curso</option>
+                            <option value="1">302</option>
+                            <option value="2">301</option>
+                            <option value="3">305</option>
+                        </select>
+                    </div>
+                    <div class=" col-sm-4">
                         <input type="datetime-local" class="form-control" id="hrini" required">
                     </div>
                     <!-- <label class="control-label col-sm-2" for="correo">fecha de salida:</label> -->
-                    <div class="col-sm-5">
+                    <div class="col-sm-4">
                         <input type="datetime-local" class="form-control" id="hrini" required">
                     </div>
                     <div class="col-sm-1">
@@ -158,22 +168,20 @@ include '_header.php';
     })
 </script>
 <script>
-    a = 0;
-
     function AgregrarHorario() {
         $('#diviniciofin').append(NuevaHoraInicioFin());
     }
 
     function NuevaHoraInicioFin() {
         // Hay que hacer todas la validacion pertinentes antes de retornar las nuevas fechas
-        return '<div class="row my-2" style="margin-left:0px;">'+
-                    '<div class=" col-sm-5">'+
-                        '<input type="datetime-local" class="form-control" id="hrini" >'+
-                    '</div>'+
-                    '<div class="col-sm-5">'+
-                        '<input type="datetime-local" class="form-control" id="hrini">'+
-                    '</div>'
-               ' </div>'
+        return '<div class="row my-2" style="margin-left:0px;">' +
+            '<div class=" col-sm-5">' +
+            '<input type="datetime-local" class="form-control" id="hrini" >' +
+            '</div>' +
+            '<div class="col-sm-5">' +
+            '<input type="datetime-local" class="form-control" id="hrini">' +
+            '</div>'
+        ' </div>'
     }
 </script>
 
