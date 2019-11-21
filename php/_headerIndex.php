@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title><?php echo $titulo ?></title>
@@ -34,48 +35,48 @@
   Header
   ============================-->
   <header id="header">
-  
+
     <div class="container">
       <nav id="nav-menu-container">
-      <div id="logo" class="pull-left">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="index.php">Inicio</a></li>
-          <li class="menu-has-children"><a href="#about">Capacitaciones</a>
-          <ul>
-            <li><a href="php/diplomados.php">Diplomados</a></li>
-            <li><a href="php/cisco.php">Cisco</a></li>
-            <li><a href="php/techacademy.php">Tech Academy</a></li> 
+        <div id="logo" class="pull-left">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="index.php">Inicio</a></li>
+            <li class="menu-has-children"><a href="#about">Capacitaciones</a>
+              <ul>
+                <li><a href="php/diplomados.php">Diplomados</a></li>
+                <li><a href="php/cisco.php">Cisco</a></li>
+                <li><a href="php/techacademy.php">Tech Academy</a></li>
+              </ul>
+            </li>
+            <li class="menu-has-children"><a href="">Administracion</a>
+              <ul>
+                <li><a href="php/agregarcurso.php">Agregar Curso</a></li>
+                <li><a href="php/roles.php">Administrar Roles</a></li>
+                <li><a href="php/estadisticas.php">Estadisticas</a></li>
+              </ul>
+            </li>
+            <li><a href="php/gestioncursos.php">Gestion de Curso</a></li>
+            <li><a href="php/horario.php">Horario</a></li>
+            <li><a href="php/sugerencia.php">Sugerencias</a></li>
+            <li class="dropdown ">
+              <!--  LOGIN MODAL TEST-->
+              <p id="btnIniciar">INICIAR SESION</p>
+              <div id="content-login" class="dropdown-content">
+                <h4>INICIAR SESION</h4>
+                <div class="form-group">
+                  <form>
+                    <div class="form-group my-2">
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="  Cedula">
+                    </div>
+                    <div class="form-group my-2">
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="  Contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-primary">INGRESAR</button>
+                  </form>
+                </div>
+              </div>
+            </li>         
           </ul>
-          </li>
-          <li class="menu-has-children"><a href="">Administracion</a>
-          <ul>
-            <li><a href="php/agregarcurso.php">Agregar Curso</a></li>
-            <li><a href="php/roles.php">Administrar Roles</a></li>
-            <li><a href="php/estadisticas.php">Estadisticas</a></li>
-          </ul>
-          </li>
-          <li><a href="php/gestioncursos.php">Gestion de Curso</a></li>
-          <li><a href="php/horario.php">Horario</a></li>
-          <li><a href="php/sugerencia.php">Sugerencias</a></li>
-          <li class="dropdown ">  <!--  LOGIN MODAL TEST-->
-            <a href="">INICIAR SESION</a>
-            <div class="dropdown-content">            
-              <h4>INICIAR SESION</h4>
-              <div  class="form-group">
-              <form>
-              <div class="form-group my-2">
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="  Cedula">
-              </div>
-              <div class="form-group my-2">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="  Contraseña">
-              </div>
-              <button type="submit" class="btn btn-primary">INGRESAR</button>
-                </form>
-              </div>
-            </div>
-            </div>
-          </li>
-        </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
