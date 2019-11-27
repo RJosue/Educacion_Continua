@@ -26,7 +26,7 @@ $idCurso = $_GET['idCurso'];
             <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             Luego de haber culminado el curso debe se le habilitara el boton de Certificar, que automaticamente enviara el certificado en formato pdf a los correos registrados dentro del sistema segun los estudiantes seleccionados mediante el checkbox.
         </div>
-  <form action="../lib/certificado/certificar.php" method="post" target="_blank">
+  <form action="../lib/certificado/certificar.php" method="post">
   <input type="hidden" name="curso" value="<?php echo $idCurso ?>">
   <table class="table">
   <thead class="thead-dark">
