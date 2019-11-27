@@ -1,11 +1,8 @@
 <?php
 $titulo = "Agregar Curso";
 include '_header.php';
-<<<<<<< HEAD
 include 'validar.php';
-=======
 include "Conexion.php";
->>>>>>> master
 ?>
 <html>
 

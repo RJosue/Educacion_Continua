@@ -8,7 +8,6 @@ $idCurso = $_GET['idCurso'];
 
 ?>
 <div class="container shadow">
-<<<<<<< HEAD
   <style type="text/css">
     td + td + td{
       border-left: 1px solid;
@@ -93,60 +92,6 @@ $idCurso = $_GET['idCurso'];
     <br>
     </form>
   <script type='text/javascript'>
-=======
-<style type="text/css">
-	td + td + td{
-		border-left: 1px solid;
-		text-align: center;
-		vertical-align: center;
-	}
-	th + th + th + th{
-		border-left: 1px solid;
-		text-align: center;
-		vertical-align: center; 	
-	}
-</style>
-<br>
-	<div class="alert alert-warning alert-dismissible" role="alert">
-	        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-	      	Luego de haber culminado el curso debe se le habilitara el boton de Certificar, que automaticamente enviara el certificado en formato pdf a los correos registrados dentro del sistema segun los estudiantes seleccionados mediante el checkbox.
-	    </div>
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nombre del Estudiante</th>
-      <th scope="col">Cedula</th>
-      <th scope="col"><input type="checkbox" name="estudiante" onchange="checkAll(this)"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr id="row_1">
-      <th>1</th>
-      <td>Ernesto</td>
-      <td>8-246-1234</td>
-      <td><input type="checkbox" name="estudiante[]"></td>
-    </tr>
-    <tr id="row_2">
-      <th>2</th>
-      <td>Chan</td>
-      <td>8-246-1234</td>
-      <td><input type="checkbox" name="estudiante[]"></td>
-    </tr>
-    <tr id="row_3">
-      <th>3</th>
-      <td>Ernesto</td>
-      <td>8-246-1234</td>
-      <td><input type="checkbox" name="estudiante[]"></td>
-    </tr>
-  </tbody>
-</table>
-	<button class="btn btn-secondary float-right ml-1"><a href="../lib/certificado/certificar.php" target="_blank">Certificar Estudiantes</a></button>
-	<button class="btn btn-secondary float-right"><a href="">Imprimir Lista</a></button>
-  <br>
-</div>
-<script type='text/javascript'>
->>>>>>> aef08204d51a187214ef1dbd74bac7ec8ae803db
 
   // Set check or unchecked all checkboxes
   function checkAll(e) {

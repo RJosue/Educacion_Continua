@@ -89,10 +89,6 @@ include 'validar.php';
     	</div>
     </div>
 </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> aef08204d51a187214ef1dbd74bac7ec8ae803db
 <?php 
 include '_footer.php';
  ?>
