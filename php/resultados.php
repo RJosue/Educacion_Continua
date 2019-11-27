@@ -10,8 +10,8 @@ include 'validar.php';
 	}
 </style>
 
-<div class="container">
-	<br><br>
+<div class="container shadow">
+	<h3 class="text-center">Resultados de la Votacion</h3>
 	<label for="Python">Python: 10</label>
 	<div class="progress">
   <div class="progress-bar progress-bar-striped" role="progressbar" name="Python" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>

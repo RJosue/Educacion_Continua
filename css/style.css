@@ -569,7 +569,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999;
 }
 
-/* LOGIN NUEVO */
+/* LOGIN NUEVO*/
 .dropdown {
   position: relative;
   display: inline-block;
@@ -592,6 +592,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
 }
 
+<<<<<<< HEAD
 /* MOFICACIONES-------------------------------------------------------------------------------------------------------*/
 #logo img {
   width: 108px;
@@ -672,3 +673,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: rgba(104,26,93, 0.9);
   border-color: #FFFFFF;
 }
+=======
+.shadow {
+   background-color: #f9f9f9;
+   margin-top: 10x;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   padding: 12px 16px 24px;
+}
+>>>>>>> aef08204d51a187214ef1dbd74bac7ec8ae803db

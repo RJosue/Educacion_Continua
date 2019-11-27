@@ -16,8 +16,7 @@ include 'validar.php';
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        <span class="glyphicon glyphicon-arrow-right"></span>¿Que otros cursos desearias que se dieran? <a href="http://www.jquery2dotnet.com" target="_blank"><span
-                            class="glyphicon glyphicon-new-window"></span></a>
+                        ¿Que otros cursos desearias que se dieran?
                     </h3>
                 </div>
                 <form action="POST">
@@ -75,8 +74,7 @@ include 'validar.php';
         <div class="col-sm-4">
         		<div class="panel-heading">
                     <h3 class="panel-title">
-                        <span class="glyphicon glyphicon-arrow-right"></span>¡Sugiere un curso!<a href="http://www.jquery2dotnet.com" target="_blank"><span
-                            class="glyphicon glyphicon-new-window"></span></a>
+                            ¡Sugiere un curso!
                     </h3>
                 </div>
                 <form method="POST">
@@ -91,6 +89,10 @@ include 'validar.php';
     	</div>
     </div>
 </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> aef08204d51a187214ef1dbd74bac7ec8ae803db
 <?php 
 include '_footer.php';
  ?>
