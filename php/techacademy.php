@@ -26,7 +26,7 @@ include '_header.php';
                             </div>                    
                         </div>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ include '_header.php';
                             </div>
 
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>
 
                         </div>
@@ -84,7 +84,7 @@ include '_header.php';
                         </div>
                     
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>
 
                         </div>
@@ -112,7 +112,7 @@ include '_header.php';
                             </div>
                             
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>
 
                         </div>
@@ -178,7 +178,7 @@ include '_header.php';
           
         </div>
           <!-- BOTON DE PAGO -->
-          <button type="buttons" class="btn btn-secondary">PAGAR</button>
+          <button type="buttons" class="btn btn-secondary">INSCRIBIRSE</button>
       </div>
     </div>
   </div>

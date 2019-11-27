@@ -1,6 +1,7 @@
 <?php
 $titulo = "Resultados";
 include '_header.php'; 
+include 'validar.php';
 ?>
 
 <style type="text/css">

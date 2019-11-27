@@ -1,6 +1,7 @@
 <?php
 $titulo = "Administracion de Roles";
 include '_header.php'; 
+include 'validar.php';
 ?>
     <div class="container ">
     <!-- BARRA DE BUSQUEDA -->

@@ -1,6 +1,7 @@
 <?php
 $titulo = "Agregar Curso";
 include '_header.php';
+include 'validar.php';
 ?>
 <html>
 
