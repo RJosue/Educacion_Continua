@@ -25,7 +25,7 @@
 
 html,body{
 background-image: url('../img/fachada_utp.jpg');
-background-color white;
+background-color: white;
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
