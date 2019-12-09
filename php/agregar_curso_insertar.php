@@ -28,14 +28,6 @@ if (file_exists("../img/" . $_FILES["fileFoto"]["name"])) {
 $imagenRuta = $_FILES["fileFoto"]["name"];
 }
 move_uploaded_file($_FILES["fileFoto"]["tmp_name"],"../img/" . $imagenRuta);
-
-
-
-
-
-             
-
-
 if ($tipoCapacitacion == 4) {
     $sqlcapacitacion ="insert into capacitaciones (nombre, fecha_creacion, foto, min_cupo, max_cupo, descripcion, duracion, id_profesor, costo) values ('$nombreCurso', '$fechaactual', '$imagenRuta' , '$cantMiniEstudiante', '$cantMaxEstudiante', '$descripcion', '$duracion','$profesor', '$pago')";
     $conexion->query($sqlcapacitacion);
@@ -115,5 +107,3 @@ if ($tipoCapacitacion == 4) {
     }
  }
 header("Location: agregarcurso.php");
-
- ?>
