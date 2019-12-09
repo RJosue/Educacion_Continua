@@ -33,30 +33,35 @@ $consultaCiscoClasificacioens->execute();
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             padding: 12px 16px 24px;
         }
-
-        input[type=text] {}
     </style>
 </head>
 
 <body>
 
-    <div class="container shadow mt-3" style="">
+    <div class="container shadow mt-3">
 
         <h2 class="text-center">Registrar Curso</h2>
-        <form class="form-horizontal" action="agregar_curso_insertar.php" method="POST">
+        <form class="form-horizontal" action="agregar_curso_insertar.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label class="control-label col-sm-2" for="nombrecurso">Nombre del curso:</label>
                 <div class="col-sm-12">
                     <input type="text" class="form-control" id="nombrecurso" name="nombrecurso" placeholder="Introduzca su nombre" required>
                 </div>
             </div>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Advertencia:</strong> Solo se aceptan imagenes en formato: <strong>png, jpeg, pjpeg, jpg</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="foto">Foto</label>
                 <div class="col-sm-12"></label>
                     <div class="col-sm-12">
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="foto" aria-describedby="foto" required>
-                            <label class="custom-file-label" for="foto"></label>
+                        <div class="mb-3">
+                            <input type="file" class="" id="foto" name="fileFoto" required accept="image/png">
+                            <label class="" for="foto"></label>
+                            <label id="errorFoto"></label>
                         </div>
                     </div>
                 </div>
@@ -71,6 +76,12 @@ $consultaCiscoClasificacioens->execute();
                     <div class="col-sm-12">
                         <input type="number" class="form-control" min="1" name="duracion" id="duracion" placeholder="N° de Horas" required>
                     </div>
+                </div>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Advertencia:</strong> La cantidad maxima de estudiantes permitidos por capacitacion sera de: <strong>25</strong> estudiantes
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="minestudiante">Cantidad Minima de Estudiante:</label>
@@ -116,6 +127,12 @@ $consultaCiscoClasificacioens->execute();
 
                 <div id="contenidodiplo" class="px-4">
                     <div class="form-group">
+                        <label class="control-label col-sm-2" for="descripcion">Objetivos Generales:</label>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" id="obejetivosGenerales" name="obejetivosGenerales" rows="3" placeholder="Escriba una los objetivos del diplomado"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="control-label col-sm-2" for="organizador">Organizador:</label>
                         <div class="col-sm-12">
                             <input type="text" class="form-control" name="organizador" id="organizador" placeholder="Persona o institucion que Organiza">
@@ -127,22 +144,29 @@ $consultaCiscoClasificacioens->execute();
                             <textarea class="form-control" name="perfilIngreso" id="perfilIngreso" rows="3" placeholder="Introduzca el Perfil de ingreso del estudiante"></textarea>
                         </div>
                     </div>
-
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Advertencia:</strong> Subir los archivos de Plan de contenido y plan de costo en formato <strong>pdf</strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="planContenido">Plan de Contenido</label>
                         <div class="col-sm-12">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" name="planContenido" id="planContenido" aria-describedby="planContenido">
-                                <label class="custom-file-label" for="planContenido"></label>
+                            <div class="">
+                                <input type="file" class="-input" name="planContenido" id="planContenido" accept="application/pdf">
+                                <label class="-label" for="planContenido"></label>
+                                <label id="errorPlanContenido"></label>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="planCosto">Plan de costo</label>
                         <div class="col-sm-12">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" name="planCosto" id="planCosto" aria-describedby="planCosto">
-                                <label class="custom-file-label" for="planCosto"></label>
+                            <div class="">
+                                <input type="file" class="-input" name="planCosto" id="planCosto" accept="application/pdf">
+                                <label class="-label" for="planCosto"></label>
+                                <label id="errorPlanCosto"></label>
                             </div>
                         </div>
                     </div>
@@ -198,12 +222,11 @@ $consultaCiscoClasificacioens->execute();
                         <div class=" col-sm-4">
                             <input type="datetime-local" class="form-control" id="11" name="fechaini[]" onchange="ValidacionFecha(11,21)" disabled required>
                         </div>
-                        <!-- <label class="control-label col-sm-2" for="correo">fecha de salida:</label> -->
                         <div class="col-sm-4">
                             <input type="datetime-local" class="form-control" id="21" name="fechafin[]" onchange="ValidacionFecha(11,21)" disabled required>
                         </div>
                         <div class="col-sm-1">
-                            <input type="button" onclick="AgregrarHorario()" disabled class="form-control" id="btninifin">
+                            <input type="button" onclick="AgregrarHorario()" disabled class="form-control" placeholder="+" id="btninifin">
                         </div>
                     </div>
                 </div>
@@ -228,13 +251,12 @@ $consultaCiscoClasificacioens->execute();
                         </div>
                     </div>
                 </div>
-                <button type="submit" onclick="liberar()" class="btn btn-primary mx-3" style="width:250px; margin-right:60px; margin-buttom:25px;">Enviar</button>
+                <button type="submit" onclick="liberar()" class="btn btn-primary mx-3" id="botonimagen" style="width:250px; margin-right:60px;">Enviar</button>
         </form>
-
-        <h2>---------------------------</h2>
     </div>
 </body>
 <script>
+    $("#errorFoto").hide();
     var num = 1;
     var xnum = 1;
     var ynum = 2;
@@ -357,12 +379,19 @@ $consultaCiscoClasificacioens->execute();
                                             $(ini).val("");
                                             $(fin).val("");
                                             alert("El salon que selecciono está siendo ocupado en la hora introducida");
-                                        } else {}
+                                        } else {
+                                            if (response == "profesorsalon") {
+                                                $(ini).val("");
+                                                $(fin).val("");
+                                                alert("El profesor y salon que selecciono no estan disponible en la fecha seleccionada");
+                                            }
+                                        }
                                     }
                                 }
                             });
                         }
                     } else {
+
                         $.ajax({
                             method: "POST",
                             url: "verificarFecha.php",
@@ -373,6 +402,7 @@ $consultaCiscoClasificacioens->execute();
                                 "profesor": profesor
                             },
                             success: function(response) {
+                                console.log(response);
                                 if (response == "profesor") {
                                     $(ini).val("");
                                     $(fin).val("");
@@ -382,7 +412,13 @@ $consultaCiscoClasificacioens->execute();
                                         $(ini).val("");
                                         $(fin).val("");
                                         alert("El salon que selecciono está siendo ocupado en la hora introducida");
-                                    } else {}
+                                    } else {
+                                        if (response == "profesorsalon") {
+                                            $(ini).val("");
+                                            $(fin).val("");
+                                            alert("El profesor y salon que selecciono no estan disponible en la fecha seleccionada");
+                                        }
+                                    }
                                 }
                             }
                         });
@@ -425,14 +461,14 @@ $consultaCiscoClasificacioens->execute();
     }
 
     function NuevaHoraInicioFin(num) {
-        return '<div class="row my-2" style="margin-left:0px;">' +
+        return '<div class="row my-2" style="margin-left:0px;" id="divfechas' + num + '">' +
             '<div class=" col-sm-5">' +
-            '<input type="datetime-local" class="form-control" id="1' + num + '"  name="fechaini[]" onchange="ValidacionFecha(1' + num + ',2' + num + ')" required>' +
+            '<input type="datetime-local" class="form-control" id="1' + num + '"  name="fechaini[]" onchange="ValidacionFecha()" required>' +
             '</div>' +
             '<div class="col-sm-5">' +
             '<input type="datetime-local" class="form-control" id="2' + num + '"  name="fechafin[]" onchange="ValidacionFecha(1' + num + ',2' + num + ')" required>' +
+            '</div>' +
             '</div>'
-        ' </div>'
     }
     // lo del radiobutton
     $('input[type="radio"]').click(function() {
@@ -453,6 +489,55 @@ $consultaCiscoClasificacioens->execute();
         $('#escprofesor').removeAttr("disabled");
         $('#escsalon').removeAttr("disabled");
     }
+
+
+    $("#foto").focusout(function() {
+        var foto = $("#foto")[0].files[0]
+        console.log(foto);
+        console.log(foto.name);
+        if ((foto.type == "image/png") || (foto.type == "image/jpeg") || (foto.type == "image/pjpeg") || (foto.type == "image/jpg")) {
+            $("#errorFoto").hide();
+        } else {
+            $("#foto").focus();
+            $("#errorFoto").show();
+            $("#errorFoto").css("color", "red");
+            $("#errorFoto").html(function() {
+                return "Formato de imagen invalido";
+            });
+            $("#foto").val("");
+
+        }
+    })
+
+    $("#planContenido").focusout(function() {
+        var file = $("#planContenido")[0].files[0]
+        if (file.type == "application/pdf") {
+            $("#errorPlanContenido").hide();
+        } else {
+            $("#planContenido").focus();
+            $("#errorPlanContenido").show();
+            $("#errorPlanContenido").css("color", "red");
+            $("#errorPlanContenido").html(function() {
+                return "Formato de archivo invalido";
+            });
+            $("#planContenido").val("");
+
+        }
+    })
+    $("#planCosto").focusout(function() {
+        var file = $("#planCosto")[0].files[0]
+        if (file.type == "application/pdf") {
+            $("#errorPlanCosto").hide();
+        } else {
+            $("#planCosto").focus();
+            $("#errorPlanCosto").show();
+            $("#errorPlanCosto").css("color", "red");
+            $("#errorPlanCosto").html(function() {
+                return "Formato de archivo invalido";
+            });
+            $("#planCosto").val("");
+        }
+    })
 </script>
 
 </html>
