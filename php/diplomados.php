@@ -3,8 +3,7 @@ $titulo = "Cursos de Diplomados";
 include '_header.php';
 include 'conexion.php';
 
-$diplomados = $conexion->prepare("SELECT ca.nombre, ca.descripcion, ca.duracion, ca.costo, ca.id, dip.objetivos, dip.perfil_ingreso, dip.criterio_evaluacion, dip.plan_contenido, dip.plan_costo from capacitaciones ca
-INNER JOIN diplomados dip on ca.id = dip.id");
+$diplomados = $conexion->prepare("SELECT * FROM diplomados dip INNER JOIN capacitaciones ca on dip.id = ca.id INNER JOIN horario ho on ho.id_capacitacion = ca.id INNER JOIN salones sal on ho.id_salon = sal.id");
 $diplomados->execute();
 $cantDiplomado = $diplomados->rowCount();
 while($cantDiplomado > 0){
@@ -24,7 +23,7 @@ while($cantDiplomado > 0){
             <!-- Este Diplomado está diseñado para que desarrolles tu potencial creativo y lo puedas utilizar para innovar en tu campo de especialización, ya sea un tema cultural, turístico, digital, artístico o similar.
             Para mayor información visitar Diplomado Industrias Creativas UTP Panamá. -->
             <h5 class="lead"><strong>Objetivo General</strong></h5>
-            <p class="card-text pl-4"><?php echo $resultados["descripcion"] ?> </p>
+            <p class="card-text pl-4"><?php echo $resultados["objetivos"] ?> </p>
             <!-- Desarrollar habilidades y competencias emprendedoras en personas interesadas en llevar adelante micro, pequeñas y medianas empresas en el campo de las industrias 
             creativas y culturales en Panamá. -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target=<?php echo "#".$resultados["id"]."info" ?>>
@@ -44,10 +43,12 @@ while($cantDiplomado > 0){
                   </div>
                   <div class="modal-body">
                       <h5 class="lead"><strong>Perfil de Ingreso:</strong></h5>
-                          <p class="card-text pl-4">Los aspirantes que participar de este Diplomado deben presentar un documento que describa una idea potencial que desean desarrollar o un proyecto o emprendimiento en marcha, utilizando un formulario específico para este tema. Se priorizarán a las personas 
-                              que cuenten con experiencia en el sector. No es necesario poseer título universitario.</p>
+                          <p class="card-text pl-4"><?php echo $resultados["perfil_ingreso"] ?></p>
+                          <!-- Los aspirantes que participar de este Diplomado deben presentar un documento que describa una idea potencial que desean desarrollar o un proyecto o emprendimiento en marcha, utilizando un formulario específico para este tema. Se priorizarán a las personas 
+                          que cuenten con experiencia en el sector. No es necesario poseer título universitario. -->
                       <h5 class="lead"><strong>Contenido del Diplomado</strong></h5>
-                      <ul>
+                      <p class="card-text pl-4"><?php echo $resultados["plan_contenido"] ?></p>
+                      <!-- <ul>
                           <li><p class="card-text pl-1">Módulo 1: Economía Creativa. Ecosistemas Culturales y Creativos Nuevos modelos de negocios. Design Thinking.</p></li>
                           <li><p class="card-text pl-1">Módulo 2: Creatividad e innovación: nuevos emprendimientos.</p></li>
                           <li><p class="card-text pl-1">Módulo 3: Administración y financiamiento de proyectos en las MIPYMES culturales y creativas.</p></li>
@@ -55,34 +56,25 @@ while($cantDiplomado > 0){
                           <li><p class="card-text pl-1">Módulo 5: Marketing digital aplicado a las industrias creativas y culturales.</p></li>                       
                           <li><p class="card-text pl-1">Módulo 6: Organización y producción de actividades y eventos.</p></li>
                           <li><p class="card-text pl-1">Módulo 7: Liderazgo para la innovación y gestión del talento humano y equipos creativos.</p></li>
-                      </ul>
+                      </ul> -->
                       <h5 class="lead"><strong>Criterios de Evaluación Académica</strong></h5>
-                          <p class="card-text pl-4">Para obtener el Certificado del Diplomado de Planeamiento y Gestión de MIPYMES en Industrias Creativas y Culturales, el participante deberá haber cumplido con los siguientes criterios:</p>
-                          <ul>
-                              <li><p class="card-text pl-1">Con la aprobación de los trabajos prácticos que se le proponen.</p></li>    
-                              <li><p class="card-text pl-1">Con el 75% de las asistencias a las clases presenciales y de las actividades virtuales y con el 75% de calificación en clases presenciales y virtuales.</p></li>
-                              <li><p class="card-text pl-1">Haber cancelado la totalidad del costo del Diplomado o su trámite en la organización patrocinadora.</p></li>
-                          </ul>
+                          <p class="card-text pl-4"><?php echo $resultados["criterio_evaluacion"] ?></p>
+                            <!-- Para obtener el Certificado del Diplomado de Planeamiento y Gestión de MIPYMES en Industrias Creativas y Culturales, el participante deberá haber cumplido con los siguientes criterios:
+                            la aprobación de los trabajos prácticos que se le proponen.    
+                            el 75% de las asistencias a las clases presenciales y de las actividades virtuales y con el 75% de calificación en clases presenciales y virtuales.
+                            cancelado la totalidad del costo del Diplomado o su trámite en la organización patrocinadora. -->
+  
                       <h5 class="lead"><strong>Organizado por:</strong></h5>
-                          <p class="card-text pl-4">Facultad de Ingeniería de Sistemas Computacionales (FISC), de la Universidad Tecnológica de Panamá (UTP).<br>
-                              Modalidad: Presencial con componentes virtuales.<br>
-                              Duración: 4 meses.<br>
-                              Incluye:
-                              <ul>
-                                  <li><p class="card-text pl-1">Certificación por la Universidad Tecnológica de Panamá, por 184 horas.</p></li>
-                                  <li><p class="card-text pl-1">Certificado internacional: Social International University (SIU), GLobal South-South Institute for Digital Creative Industries (IDCI).</p></li>
-                                  <li><p class="card-text pl-1">No incluye alimentación.</p></li>
-                                  <li><p class="card-text pl-1">Rango de matrícula requerida para el funcionamiento: El grupo se abrirá con un mínimo de 25 participantes y un máximo de 45.</p></li>
-                              </ul>
-                          </p>
-                      <h5 class="lead"><strong>Costos:</strong></h5>
-                          <ul>
-                              <li><p class="card-text pl-1">Horario: Viernes  6:00 p.m. a 9:00 p.m. y Sábado 9:00 a.m. a 5:00 p.m.</p></li>
-                              <li><p class="card-text pl-1">Lugar: Edificio No° 3 de la FISC</p></li>
-                              <li><p class="card-text pl-1">Total de Horas: 184 horas</p></li>
-                              <li><p class="card-text pl-1">Costos: $ 1,200.00</p></li>
-                              <li><p class="card-text pl-1">Fecha de inicio:  20 de septiembre de 2019</p></li>
-                          </ul>
+                          <p class="card-text pl-4"><?php echo $resultados["organizador"] ?></p>
+                          <!-- Facultad de Ingeniería de Sistemas Computacionales (FISC), de la Universidad Tecnológica de Panamá (UTP). -->
+                      <h5 class="lead"><strong>Costo:</strong></h5>
+                      <p class="card-text pl-4"><?php echo $resultados["costo"] ?></p>
+                      <h5 class="lead"><strong>Duración:</strong></h5>
+                      <p class="card-text pl-4"><?php echo $resultados["duracion"] ?></p>
+                      <h5 class="lead"><strong>Fecha inicio: </strong></h5>
+                      <p class="card-text pl-4"><?php echo $resultados["fecha"] ?></p>
+                      <h5 class="lead"><strong>Lugar: </strong></h5>
+                      <p class="card-text pl-4"><?php echo $resultados["salon"] ?></p>
                   </div>
                   <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

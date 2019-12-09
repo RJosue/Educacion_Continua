@@ -3,9 +3,9 @@ $titulo = "Cursos de Tech Academy";
 include '_header.php';
 include 'conexion.php';
 
-$query1 = $conexion->prepare("SELECT ca.nombre as 'nombre_curso', ca.id as 'id_cap', ca.descripcion as 'descripcion', ta.responsable, usu.nombre, usu.apellido, ca.duracion FROM capacitaciones ca INNER JOIN techacademy ta on ca.id = ta.id INNER JOIN usuarios usu on usu.id = ca.id_profesor INNER JOIN usuarios_rol usurol on usu.id = usurol.id_usuario INNER JOIN rol r on usurol.id_rol = r.id");
+$query1 = $conexion->prepare("SELECT ca.nombre as 'nombre_curso', ca.id as 'id_cap', ca.descripcion as 'descripcion', ta.responsable, usu.nombre, usu.apellido, ca.duracion FROM capacitaciones ca INNER JOIN techacademy ta on ca.id = ta.id INNER JOIN usuarios usu on usu.id = ca.id_profesor");
 $query2 = $conexion->prepare("SELECT ho.fecha, ho.hora_inicio, ho.hora_fin, sa.salon FROM capacitaciones ca INNER JOIN techacademy tcha on ca.id = tcha.id INNER JOIN horario ho on ca.id = ho.id_capacitacion INNER JOIN salones sa on ho.id_salon = sa.id");
-$totalRegistro = $conexion->query("SELECT COUNT(*) as total FROM capacitaciones ca INNER JOIN techacademy ta on ca.id = ta.id INNER JOIN usuarios usu on usu.id = ca.id_profesor INNER JOIN usuarios_rol usurol on usu.id = usurol.id_usuario INNER JOIN rol r on usurol.id_rol = r.id");
+$totalRegistro = $conexion->query("SELECT COUNT(*) as total FROM capacitaciones ca INNER JOIN techacademy ta on ca.id = ta.id INNER JOIN usuarios usu on usu.id = ca.id_profesor");
 
 $query1->setFetchMode(PDO :: FETCH_ASSOC);
 $query1->execute();
@@ -14,7 +14,7 @@ $query1->execute();
 $query2->setFetchMode(PDO :: FETCH_ASSOC);
 $query2->execute();
 
-$totalRegistro = $totalRegistro->fetchColumn();
+echo $totalRegistro = $totalRegistro->fetchColumn();
 ?>
     <div class="container mt-4">
         <h1 class="display-4 text-center mt-3"><?php echo $titulo ?></h1>
