@@ -72,7 +72,7 @@ echo $totalClasificacionCisco;
         <?php $cards = 3;
         while($cards > 0){
             $contClasificacionCisco = $contClasificacionCisco + 1;
-            $clasf = $conexion->prepare("select ca.id, ca.nombre, ca.descripcion, ca.costo, ca.duracion, clci.clasificacion from capacitaciones ca
+            $clasf = $conexion->prepare("select ca.id, ca.nombre, ca.foto, ca.descripcion, ca.costo, ca.duracion, clci.clasificacion from capacitaciones ca
             INNER JOIN cisco ci on ci.id = ca.id
             INNER JOIN clasificacion_cisco clci on clci.id = ci.id_clasificacion
             WHERE clci.id = ?");
@@ -82,7 +82,7 @@ echo $totalClasificacionCisco;
             if($totalRegistro!=0){
 ?>
                 <div class="card mt-3 ">
-                    <img src="../img/redes.jpg" class="card-img-top" alt="...">
+                    <img src="../img/<?php echo $resultados["foto"] ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $resultados["clasificacion"]?></h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repellat animi. Fugit, ratione! Consequatur vero distinctio libero perspiciatis accusamus. </p>

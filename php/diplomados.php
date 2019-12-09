@@ -13,7 +13,8 @@ while($cantDiplomado > 0){
     <div class="card mb-3" style="max-width: 100%;">
       <div class="row no-gutters">
         <div class="col-md-4">
-          <img src="../img/diplomado1.jpg" class="card-img img-fluid p-4" alt="...">
+          <!-- <img src="../img/diplomado1.jpg" class="card-img img-fluid p-4" alt="..."> -->
+          <img src="../img/<?php echo $resultados["foto"];?>" class="card-img img-fluid p-4" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body mt-4">
@@ -47,7 +48,7 @@ while($cantDiplomado > 0){
                           <!-- Los aspirantes que participar de este Diplomado deben presentar un documento que describa una idea potencial que desean desarrollar o un proyecto o emprendimiento en marcha, utilizando un formulario específico para este tema. Se priorizarán a las personas 
                           que cuenten con experiencia en el sector. No es necesario poseer título universitario. -->
                       <h5 class="lead"><strong>Contenido del Diplomado</strong></h5>
-                      <p class="card-text pl-4"><?php echo $resultados["plan_contenido"] ?></p>
+                      <p class="card-text pl-4"><a href="../files/plan_contenido/<?php echo $resultados["plan_contenido"];?>" style="color:grey;">Descargar pdf</a></p>
                       <!-- <ul>
                           <li><p class="card-text pl-1">Módulo 1: Economía Creativa. Ecosistemas Culturales y Creativos Nuevos modelos de negocios. Design Thinking.</p></li>
                           <li><p class="card-text pl-1">Módulo 2: Creatividad e innovación: nuevos emprendimientos.</p></li>

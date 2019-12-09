@@ -2,19 +2,18 @@
 $titulo = "Cursos de Tech Academy";
 include '_header.php';
 include 'conexion.php';
-
-$query1 = $conexion->prepare("SELECT ca.nombre as 'nombre_curso', ca.id as 'id_cap', ca.descripcion as 'descripcion', ta.responsable, usu.nombre, usu.apellido, ca.duracion FROM capacitaciones ca INNER JOIN techacademy ta on ca.id = ta.id INNER JOIN usuarios usu on usu.id = ca.id_profesor");
+$query1 = $conexion->prepare("SELECT ca.nombre as 'nombre_curso', ca.id as 'id_cap', ca.descripcion as 'descripcion', ca.foto, ta.responsable, usu.nombre, usu.apellido, ca.duracion FROM capacitaciones ca INNER JOIN techacademy ta on ca.id = ta.id INNER JOIN usuarios usu on usu.id = ca.id_profesor");
 $query2 = $conexion->prepare("SELECT ho.fecha, ho.hora_inicio, ho.hora_fin, sa.salon FROM capacitaciones ca INNER JOIN techacademy tcha on ca.id = tcha.id INNER JOIN horario ho on ca.id = ho.id_capacitacion INNER JOIN salones sa on ho.id_salon = sa.id");
 $totalRegistro = $conexion->query("SELECT COUNT(*) as total FROM capacitaciones ca INNER JOIN techacademy ta on ca.id = ta.id INNER JOIN usuarios usu on usu.id = ca.id_profesor");
 
 $query1->setFetchMode(PDO::FETCH_ASSOC);
 $query1->execute();
-
+echo $id_usuario = $_SESSION['id'];
 
 $query2->setFetchMode(PDO::FETCH_ASSOC);
 $query2->execute();
 
-echo $totalRegistro = $totalRegistro->fetchColumn();
+$totalRegistro = $totalRegistro->fetchColumn();
 ?>
 <div class="container mt-4">
     <h1 class="display-4 text-center mt-3"><?php echo $titulo ?></h1>
@@ -26,7 +25,7 @@ echo $totalRegistro = $totalRegistro->fetchColumn();
         <div class="card mb-3">
             <div class="row no-gutters">
                 <div class="col-md-7">
-                    <img src="../img/python.jpg" class="card-img" alt="...">
+                    <img src="../img/<?php echo $resulQuery1["foto"] ?>" class="card-img" alt="...">
                 </div>
                 <div class="col-md-5">
                     <div class="card-body mt-5">
@@ -107,7 +106,10 @@ echo $totalRegistro = $totalRegistro->fetchColumn();
                                 </div>
                             </blockquote>
                         </div>
-                        <button type="buttons" class="btn btn-secondary">INSCRIBIRSE</button>
+                        <form action="agregar_usuario_capacitacion.php" method="POST">
+                            <input type="hidden" name="id_curso" value="<?php echo $resulQuery1["id_cap"]; ?>"/>
+                            <button type="buttons" class="btn btn-secondary" >INSCRIBIRSE</button>                                                                        
+                        </form>
                     </div>
                 </div>
             </div>
