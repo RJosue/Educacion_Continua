@@ -114,6 +114,6 @@ if ($tipoCapacitacion == 4) {
         }
     }
  }
-// header("Location: agregarcurso.php");
+header("Location: agregarcurso.php");
 
  ?>
