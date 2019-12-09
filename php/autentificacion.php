@@ -19,7 +19,7 @@ include 'conexion.php';
 //                     echo $row['nombre']." ".$row['apellido']." ".$row['correo'];
 // 				}
 
-$stmt = $conexion->prepare("SELECT u.id, u.nombre, u.apellido, ur.id_rol, r.rol from usuarios u inner join usuarios_rol ur on u.id = id_usuario inner join rol r on r.id = ur.id_rol where u.correo = ? and u.password = ? LIMIT 1");
+$stmt = $conexion->prepare("SELECT u.id, u.nombre, u.apellido, u.cedula, u.correo, u.fecha_nacimiento, ur.id_rol, r.rol from usuarios u inner join usuarios_rol ur on u.id = id_usuario inner join rol r on r.id = ur.id_rol where u.correo = ? and u.password = ? LIMIT 1");
 $stmt->execute([$user, $pass]); 
 $data = $stmt->fetchAll();
 $count = $stmt->rowCount();
@@ -27,7 +27,11 @@ echo $count;
 if($count){
         foreach ($data as $row) {
         echo $row['nombre'].$row['id_rol'];
-        $_SESSION['nombre'] = $row['nombre']." ".$row['apellido'];
+        $_SESSION['nombre'] = $row['nombre'];
+        $_SESSION['apellido'] = $row['apellido'];
+        $_SESSION['cedula']= $row['cedula'];
+        $_SESSION['correo'] = $row['correo'];
+        $_SESSION['fecha_nacimiento'] = $row['fecha_nacimiento'];
         $_SESSION['id'] = $row['id'];
         $_SESSION['id_rol'] = $row['id_rol'];
         $_SESSION['rol'] = $row['rol'];
