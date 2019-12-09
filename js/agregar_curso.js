@@ -1,3 +1,4 @@
+$("#errorFoto").hide();
 var num = 1;
 var xnum = 1;
 var ynum = 2;
@@ -120,12 +121,19 @@ function ValidacionFecha(horaini, horafinal) {
                                         $(ini).val("");
                                         $(fin).val("");
                                         alert("El salon que selecciono está siendo ocupado en la hora introducida");
-                                    } else { }
+                                    } else {
+                                        if (response == "profesorsalon") {
+                                            $(ini).val("");
+                                            $(fin).val("");
+                                            alert("El profesor y salon que selecciono no estan disponible en la fecha seleccionada");
+                                        }
+                                    }
                                 }
                             }
                         });
                     }
                 } else {
+
                     $.ajax({
                         method: "POST",
                         url: "verificarFecha.php",
@@ -136,6 +144,7 @@ function ValidacionFecha(horaini, horafinal) {
                             "profesor": profesor
                         },
                         success: function (response) {
+                            console.log(response);
                             if (response == "profesor") {
                                 $(ini).val("");
                                 $(fin).val("");
@@ -145,7 +154,13 @@ function ValidacionFecha(horaini, horafinal) {
                                     $(ini).val("");
                                     $(fin).val("");
                                     alert("El salon que selecciono está siendo ocupado en la hora introducida");
-                                } else { }
+                                } else {
+                                    if (response == "profesorsalon") {
+                                        $(ini).val("");
+                                        $(fin).val("");
+                                        alert("El profesor y salon que selecciono no estan disponible en la fecha seleccionada");
+                                    }
+                                }
                             }
                         }
                     });
@@ -188,14 +203,14 @@ function AgregrarHorario() {
 }
 
 function NuevaHoraInicioFin(num) {
-    return '<div class="row my-2" style="margin-left:0px;">' +
+    return '<div class="row my-2" style="margin-left:0px;" id="divfechas' + num + '">' +
         '<div class=" col-sm-5">' +
-        '<input type="datetime-local" class="form-control" id="1' + num + '"  name="fechaini[]" onchange="ValidacionFecha(1' + num + ',2' + num + ')" required>' +
+        '<input type="datetime-local" class="form-control" id="1' + num + '"  name="fechaini[]" onchange="ValidacionFecha()" required>' +
         '</div>' +
         '<div class="col-sm-5">' +
         '<input type="datetime-local" class="form-control" id="2' + num + '"  name="fechafin[]" onchange="ValidacionFecha(1' + num + ',2' + num + ')" required>' +
+        '</div>' +
         '</div>'
-    ' </div>'
 }
 // lo del radiobutton
 $('input[type="radio"]').click(function () {
@@ -215,8 +230,54 @@ $('input[type="radio"]').click(function () {
 function liberar() {
     $('#escprofesor').removeAttr("disabled");
     $('#escsalon').removeAttr("disabled");
+    alert("Curso Registrado Correctamente.")
 }
 
 
+$("#foto").focusout(function () {
+    var foto = $("#foto")[0].files[0]
+    console.log(foto);
+    console.log(foto.name);
+    if ((foto.type == "image/png") || (foto.type == "image/jpeg") || (foto.type == "image/pjpeg") || (foto.type == "image/jpg")) {
+        $("#errorFoto").hide();
+    } else {
+        $("#foto").focus();
+        $("#errorFoto").show();
+        $("#errorFoto").css("color", "red");
+        $("#errorFoto").html(function () {
+            return "Formato de imagen invalido";
+        });
+        $("#foto").val("");
 
-// CARGAR FOTOS Y ARCHIVOS....
+    }
+})
+
+$("#planContenido").focusout(function () {
+    var file = $("#planContenido")[0].files[0]
+    if (file.type == "application/pdf") {
+        $("#errorPlanContenido").hide();
+    } else {
+        $("#planContenido").focus();
+        $("#errorPlanContenido").show();
+        $("#errorPlanContenido").css("color", "red");
+        $("#errorPlanContenido").html(function () {
+            return "Formato de archivo invalido";
+        });
+        $("#planContenido").val("");
+
+    }
+})
+$("#planCosto").focusout(function () {
+    var file = $("#planCosto")[0].files[0]
+    if (file.type == "application/pdf") {
+        $("#errorPlanCosto").hide();
+    } else {
+        $("#planCosto").focus();
+        $("#errorPlanCosto").show();
+        $("#errorPlanCosto").css("color", "red");
+        $("#errorPlanCosto").html(function () {
+            return "Formato de archivo invalido";
+        });
+        $("#planCosto").val("");
+    }
+})

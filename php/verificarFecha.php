@@ -19,21 +19,13 @@ $consultaProfesores = $conexion->query("SELECT count(*)FROM (((((rol r INNER JOI
                  INNER JOIN capacitaciones c ON c.id = uc.id_capacitacion)
                  INNER JOIN horario h ON h.id_capacitacion=c.id)
                  where '$fechaini'< h.hora_fin && '$fechafin' > h.hora_inicio && u.id='$profesor'");
-// if($consultaSalones->fetchColumn()>0 || $consultaProfesores->fetchColumn()>0){
-    echo $consultaProfesores->fetchColumn(). $consultaSalones->fetchColumn();
-    if ($consultaProfesores->fetchColumn() > 0) {
-        echo ("profesor");
-    }else {
-        if ($consultaSalones->fetchColumn() > 0) {
-            echo ("salon");
-        }else {
-            echo"";
-        }
+if ($consultaProfesores->fetchColumn() > 0) {
+    echo ("profesor");
+} else {
+    if ($consultaSalones->fetchColumn() > 0) {
+        echo ("salon");
+    } else {
+        echo "";
     }
-    
-// }
-// else {
-//     echo("false");
-// }
-
+}
 

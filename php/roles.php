@@ -5,35 +5,14 @@ include 'Conexion.php';
 include 'validar.php';
 ?>
 <!-- DATA TABBLE -->
-<style>
-  .tabla {
-    text-align: justify;
-    min-height: 50vh;
-    font-family: Roboto, Arial;
-    color: gray;
-    /* display: flex;  */
-    justify-content: center;
-    align-items: center;
-  }
-
-  td {
-    text-align: center;
-  }
-</style>
+<link rel="stylesheet" type="text/css" href="../css/tabla.css">
 <?php
 
 // FETCH_ASSOC
 $estudiantes = $conexion->query("SELECT u.id,u.nombre,u.apellido,u.cedula,ur.id_rol FROM usuarios u INNER JOIN usuarios_rol ur ON u.id = ur.id_usuario");
-
 $estudiantes->setFetchMode(PDO::FETCH_ASSOC);
-
 // Ejecutamos
 $estudiantes->execute();
-
-
-
-// $
-
 ?>
 
 <div class="container ">
