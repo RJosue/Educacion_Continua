@@ -25,6 +25,11 @@
   <!-- Main Stylesheet File -->
   <link href="../css/style.css" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.src.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script> 
+
+
 </head>
 
 <body>
