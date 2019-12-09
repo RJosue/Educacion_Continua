@@ -1,7 +1,8 @@
 <?php
 $titulo = "Administracion de Roles";
 include '_header.php';
-include 'conexion.php'
+include 'Conexion.php';
+include 'validar.php';
 ?>
 <!-- DATA TABBLE -->
 <style>

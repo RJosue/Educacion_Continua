@@ -64,12 +64,12 @@ include '_header.php';
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">CCNA Routing and Switching
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>
                 </li>
                 <li class="list-group-item">Networking Essentials
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>           
                 </li>
             </ul>
@@ -84,17 +84,17 @@ include '_header.php';
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">CCNP Routing and Switching
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>
                 </li>
                 <li class="list-group-item">Switching
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>          
                 </li>
                 <li class="list-group-item">Troubleshooting
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>        
             </li>
             </ul>
@@ -108,22 +108,22 @@ include '_header.php';
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Introducción a la Ciberseguridad
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>
                 </li>
                 <li class="list-group-item">Fundamentos de Ciberseguridad
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>         
                 </li>
                 <li class="list-group-item">Cibersecurity Operations
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>           
                 </li>
                 <li class="list-group-item">CCNA Security
                         <<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>           
                 </li>
             </ul>
@@ -140,22 +140,22 @@ include '_header.php';
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Linux Unhatched
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>
                 </li>
                 <li class="list-group-item"> Linux Essentials
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>          
                 </li>
                 <li class="list-group-item"> Linux I
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>          
                 </li>
                 <li class="list-group-item"> Linux II
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>           
                 </li>
             </ul>
@@ -170,15 +170,15 @@ include '_header.php';
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">IT Essentials (Hardware & Software)
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>                </li>
                 <li class="list-group-item">Get Conected
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>                </li>
                 <li class="list-group-item">Internet de las Cosas
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>                </li>
             </ul>
         </div>
@@ -191,11 +191,11 @@ include '_header.php';
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Sea su propio Jefe
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>                </li>
                 <li class="list-group-item">Emprendimiento
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
-                        Pagar
+                        INSCRIBIRSE
                         </button>
                 </li>
             </ul>
@@ -260,7 +260,7 @@ include '_header.php';
           
         </div>
           <!-- BOTON DE PAGO -->
-          <button type="buttons" class="btn btn-secondary">PAGAR</button>
+          <button type="buttons" class="btn btn-secondary">INSCRIBIRSE</button>
       </div>
     </div>
   </div>

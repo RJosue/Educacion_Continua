@@ -1,7 +1,9 @@
 <?php 
 
 $titulo = "Educacion Continua";
-include 'php/_headerIndex.php'; ?>
+include 'php/_headerIndex.php'; 
+?>
+
 
 <link rel="stylesheet" type="text/css" href="css/Index.css">
 
