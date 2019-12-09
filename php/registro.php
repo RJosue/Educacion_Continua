@@ -14,8 +14,6 @@ include '_header.php';
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             padding: 12px 16px 24px;
         }
-
-        input[type=text] {}
     </style>
 </head>
 
@@ -86,7 +84,7 @@ include '_header.php';
                     <input type="text" class="form-control" id="intitucion" placeholder="Intitucion de donde proviene" name="institucion">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary mx-3" style="width:250px; margin-right:60px; margin-buttom:25px;" name="submit">Enviar</button>
+            <button type="submit" class="btn btn-primary mx-3" style="width:250px; margin-right:60px;" name="submit">Enviar</button>
         </form>
         <!-- <form class="mx-auto">
             <h2 class="" style="margin-left:60px;">Registrarse</h2>
