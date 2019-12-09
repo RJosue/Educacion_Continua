@@ -2,7 +2,7 @@
 $titulo = "Agregar Curso";
 include '_header.php';
 include 'validar.php';
-include "Conexion.php";
+include "conexion.php";
 ?>
 <html>
 
@@ -26,11 +26,9 @@ $consultaCiscoClasificacioens->execute();
 
 
 
-<head>
-    <link rel="stylesheet" type="text/css" href="../css/sombras.css">
-</head>
 
-<body>
+    <link rel="stylesheet" type="text/css" href="../css/sombras.css">
+
 
     <div class="container shadow mt-3">
 
@@ -248,7 +246,6 @@ $consultaCiscoClasificacioens->execute();
                 <button type="submit" onclick="liberar()" class="btn btn-primary mx-3" id="botonimagen" style="width:250px; margin-right:60px;">Enviar</button>
         </form>
     </div>
-</body>
 <script src="../js/agregar_curso.js"></script>
 
 </html>
