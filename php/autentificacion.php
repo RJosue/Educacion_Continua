@@ -4,8 +4,8 @@ session_start();
 // verifica la sesión
 
 $user =$_POST['user'];
-$pass =md5($_POST['password']);
-
+//$pass =md5($_POST['password']);
+$pass = ($_POST['password']);
 include 'conexion.php';
 //select u.id, u.nombre, u.apellido, ur.id_rol, r.rol from usuarios u inner join usuarios_rol ur on u.id = id_usuario inner join rol r on r.id = ur.id_rol where u.correo = ? and u.password = ? 
 
