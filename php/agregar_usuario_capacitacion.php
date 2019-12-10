@@ -15,7 +15,7 @@ if($cantUsuarioEnCapacitacion = 0)
     //INSERT INTO `usuarios_capacitaciones` (`id_usuario`, `id_capacitacion`) VALUES ('2', '13');
     $conexion->query($sql);
     echo ("<script LANGUAGE='JavaScript'>
-    window.alert('Ya está registrado para este curso.');
+    window.alert('La inscripción se ha completado exitosamente.');
     window.location.href='miscursos.php';
     </script>");   
 }
@@ -25,8 +25,8 @@ $verifica->execute([$id_curso,$id_usuario]);
 $verifica = $verifica->fetchColumn();
     if($verifica != 0){
         echo ("<script LANGUAGE='JavaScript'>
-        window.alert('Usted ya está mariculado en este curso.');
-        window.location.href='techacademy.php';
+        window.alert('Usted ya se ha matriculado para este curso previamente');
+        window.location.href='../index.php';
         </script>");
     }
     else{
@@ -41,7 +41,7 @@ $verifica = $verifica->fetchColumn();
             $sql = "insert into usuarios_capacitaciones (id_usuario, id_capacitacion) values ('$id_usuario','$id_curso')";
             $conexion->query($sql);
             echo ("<script LANGUAGE='JavaScript'>
-            window.alert('Ya está registrado para este curso.');
+            window.alert('La inscripción se ha completado exitosamente.');
             window.location.href='miscursos.php';
             </script>");            
         }
@@ -49,7 +49,7 @@ $verifica = $verifica->fetchColumn();
         {
             echo ("<script LANGUAGE='JavaScript'>
             window.alert('Ya no hay cupo para este curso.');
-            window.location.href='techacademy.php';
+            window.location.href='../index.php';
             </script>");
         }
     }

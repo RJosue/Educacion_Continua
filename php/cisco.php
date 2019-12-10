@@ -2,7 +2,7 @@
 $titulo = "Academia CISCO";
 include '_header.php';
 include 'conexion.php';
-
+echo "id:".$_SESSION['id'];
 $ClasificacionCisco = $conexion->prepare("select COUNT(*) as 'total' from clasificacion_cisco");
 $ClasificacionCisco->execute();
 $ClasificacionCisco = $ClasificacionCisco->fetch();
@@ -154,8 +154,21 @@ echo $totalClasificacionCisco;
                                                 </ul>
                                             </div>  
                                         </blockquote>
+                                        <blockquote class="blockquote mb-0 mt-4">
+                                            <div class="card" style="width: 100%;">
+                                            <div class="card-header">
+                                            Pago
+                                            </div>
+                                                <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Total: <?php echo $resultados["costo"] ?></li>
+                                                </ul>
+                                            </div>  
+                                        </blockquote>
                                     </div>
-                                    <button type="buttons" class="btn btn-secondary">INSCRIBIRSE</button>
+                                    <form action="agregar_usuario_capacitacion.php" method="POST">
+                                        <input type="hidden" name="id_curso" value="<?php echo $resultados["id"]; ?>"/>
+                                        <button type="buttons" class="btn btn-secondary" >INSCRIBIRSE</button>                                                                        
+                                    </form>
                                 </div>
                             </div>
                         </div>
