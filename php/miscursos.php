@@ -16,7 +16,7 @@ include 'validar.php';
     // $id = $_SESSION['id_profesor'];
     $id = [$_SESSION['id']][0];
 
-    $sql = $conexion->query("SELECT * from usuarios u
+    $sql = $conexion->query("SELECT c.nombre AS 'curso',c.descripcion,c.costo,c.duracion,u.nombre,u.apellido,u.correo from usuarios u
     inner join usuarios_capacitaciones uc on u.id = uc.id_usuario
     inner join capacitaciones c on uc.id_capacitacion = c.id
     where u.id = '+$id+';");
