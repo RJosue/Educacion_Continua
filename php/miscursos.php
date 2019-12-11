@@ -16,7 +16,10 @@ include 'validar.php';
     // $id = $_SESSION['id_profesor'];
     $id = [$_SESSION['id']][0];
 
-    $sql = $conexion->query("SELECT c.nombre AS 'curso',c.descripcion,c.costo,c.duracion,u.nombre,u.apellido,u.correo FROM usuarios_capacitaciones uc INNER JOIN capacitaciones c ON c.id = uc.id_capacitacion INNER JOIN usuarios u ON u.id = c.id_profesor WHERE uc.id_usuario ='+$id+' && c.id_profesor!='+$id+'");
+    $sql = $conexion->query("SELECT * from usuarios u
+    inner join usuarios_capacitaciones uc on u.id = uc.id_usuario
+    inner join capacitaciones c on uc.id_capacitacion = c.id
+    where u.id = '+$id+';");
     $sql->setFetchMode(PDO::FETCH_ASSOC);
     // Ejecutamos
     $sql->execute();

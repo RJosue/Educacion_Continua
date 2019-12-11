@@ -58,7 +58,7 @@ $('#esctipo').change(function () {
 
 $('#modalidadch').click(function () {
     var combo = $('#modalidadch')[0].value();
-    alert(combo + "comobo");
+    //alert(combo + "comobo");
 })
 
 function ValidacionProSal() {
@@ -103,7 +103,7 @@ function ValidacionFecha(horaini, horafinal) {
                     } else {
                         $.ajax({
                             method: "POST",
-                            url: "verificarFecha.php",
+                            url: "../php/verificarFecha.php",
                             data: {
                                 "fechaInicial": hrini,
                                 "fechaFinal": hrfin,
@@ -136,7 +136,7 @@ function ValidacionFecha(horaini, horafinal) {
 
                     $.ajax({
                         method: "POST",
-                        url: "verificarFecha.php",
+                        url: "../php/verificarFecha.php",
                         data: {
                             "fechaInicial": hrini,
                             "fechaFinal": hrfin,
@@ -230,7 +230,6 @@ $('input[type="radio"]').click(function () {
 function liberar() {
     $('#escprofesor').removeAttr("disabled");
     $('#escsalon').removeAttr("disabled");
-    alert("Curso Registrado Correctamente.")
 }
 
 
