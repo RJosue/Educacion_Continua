@@ -26,7 +26,7 @@ $numCeil = $totalCursosBasicos/2;?>
 <?php
 if(strpos($numCeil,".") !== false){
       $numCeil = ceil($numCeil);
-      $x = 1;
+      $x = 1; 
 }
     while($numCeil > 0 and $totalCursosBasicos > 0){ ?>
     <div class="row center  d-flex justify-content-center">
@@ -98,7 +98,7 @@ if(strpos($numCeil,".") !== false){
                         INSCRIBIRSE
                     </button>
                 </div>
-                
+
                 <div class="modal fade" id=<?php echo $resultados["id"]."fac" ?> tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
