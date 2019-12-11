@@ -98,6 +98,7 @@ if(strpos($numCeil,".") !== false){
                         INSCRIBIRSE
                     </button>
                 </div>
+                
                 <div class="modal fade" id=<?php echo $resultados["id"]."fac" ?> tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
