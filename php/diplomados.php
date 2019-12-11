@@ -1,11 +1,13 @@
 <?php
-$titulo = "Cursos de Diplomados";
+$titulo = "Diplomados";
 include '_header.php';
 include 'conexion.php';
 
 $diplomados = $conexion->prepare("SELECT ca.id as 'id_cap', ca.nombre as 'nombre_capacitacion', ca.foto, ca.descripcion, ca.duracion, ca.costo, dip.id, dip.organizador, dip.perfil_ingreso, dip.plan_costo, dip.plan_contenido, dip.criterio_evaluacion, dip.objetivos, ho.fecha, sal.salon FROM diplomados dip INNER JOIN capacitaciones ca on dip.id = ca.id INNER JOIN horario ho on ho.id_capacitacion = ca.id INNER JOIN salones sal on ho.id_salon = sal.id");
 $diplomados->execute();
-$cantDiplomado = $diplomados->rowCount();
+$cantDiplomado = $diplomados->rowCount();?>
+<h1 class="display-4 text-center mt-3"><?php echo $titulo ?></h1>
+<?php
 while($cantDiplomado > 0){
   $resultados = $diplomados->fetch();
 ?>

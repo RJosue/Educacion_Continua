@@ -8,7 +8,6 @@ $totalRegistro = $conexion->query("SELECT COUNT(*) as total FROM capacitaciones 
 
 $query1->setFetchMode(PDO::FETCH_ASSOC);
 $query1->execute();
-echo $id_usuario = $_SESSION['id'];
 
 $query2->setFetchMode(PDO::FETCH_ASSOC);
 $query2->execute();

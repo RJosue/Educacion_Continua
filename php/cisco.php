@@ -2,13 +2,11 @@
 $titulo = "Academia CISCO";
 include '_header.php';
 include 'conexion.php';
-echo "id:".$_SESSION['id'];
 $ClasificacionCisco = $conexion->prepare("select COUNT(*) as 'total' from clasificacion_cisco");
 $ClasificacionCisco->execute();
 $ClasificacionCisco = $ClasificacionCisco->fetch();
 $totalClasificacionCisco = $ClasificacionCisco["total"];
 $contClasificacionCisco = $totalClasificacionCisco - $totalClasificacionCisco;
-echo $totalClasificacionCisco;
 
 ?>
 
