@@ -6,8 +6,8 @@ include 'validar.php';
 
 $idDelCurso = $_GET['idCurso'];
  // Store the cipher method 
- $ciphering = "AES-128-CTR"; 
-$options = 1gi0;
+ $ciphering = "AES-256-CTR"; 
+$options = 0;
  // Use OpenSSl Encryption method 
  $iv_length = openssl_cipher_iv_length($ciphering); 
 $decryption_iv = '0234789057295120'; 
@@ -53,9 +53,9 @@ echo $idCurso;
       </tr>
     </thead>
   <?php 
-    				$stmt = $conexion->prepare("select u.id, u.nombre, u.apellido, u.cedula from usuarios u inner join usuarios_capacitaciones uc on u.id = id_usuario inner join capacitaciones c on c.id = uc.id_capacitacion where uc.id_capacitacion = ?;
+    				$stmt = $conexion->prepare("select u.id, u.nombre, u.apellido, u.cedula from usuarios u inner join usuarios_capacitaciones uc on u.id = id_usuario inner join capacitaciones c on c.id = uc.id_capacitacion where uc.id_capacitacion = ? and c.id_profesor = ?;
             ");
-            $stmt->execute([$idCurso]); 
+            $stmt->execute([$idCurso,$_SESSION['id']]); 
             $est = $stmt->fetchAll();
             $cont = 1;
             foreach ($est as $row) {

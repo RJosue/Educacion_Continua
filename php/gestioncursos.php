@@ -23,11 +23,11 @@ include 'validar.php';
             $collapse = "collapse".$cont;
             $idCurso = $row['id'];
             // Store the cipher method 
-            $ciphering = "AES-128-CTR"; 
+            $ciphering = "AES-256-CTR"; 
               
             // Use OpenSSl Encryption method 
             $iv_length = openssl_cipher_iv_length($ciphering); 
-            $options = 10; 
+            $options = 0; 
               
             // Non-NULL Initialization Vector for encryption 
             $encryption_iv = '0234789057295120'; 
