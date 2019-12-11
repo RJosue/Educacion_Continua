@@ -29,6 +29,7 @@ $verifica = $verifica->fetchColumn();
         window.location.href='../index.php';
         </script>");
     }
+    
     else{
         $validarCupos = $conexion->prepare("SELECT min_cupo, max_cupo FROM capacitaciones WHERE id = ?");
         $validarCupos->setFetchMode(PDO::FETCH_ASSOC);
