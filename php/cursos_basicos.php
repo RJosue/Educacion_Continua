@@ -27,6 +27,7 @@ $numCeil = $totalCursosBasicos/2;?>
 if(strpos($numCeil,".") !== false){
       $numCeil = ceil($numCeil);
       $x = 1; 
+      
 }
     while($numCeil > 0 and $totalCursosBasicos > 0){ ?>
     <div class="row center  d-flex justify-content-center">
