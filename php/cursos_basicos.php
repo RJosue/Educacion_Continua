@@ -25,8 +25,8 @@ $numCeil = $totalCursosBasicos/2;?>
         <h1 class="display-4 text-center mt-3"><?php echo $titulo ?></h1>
 <?php
 if(strpos($numCeil,".") !== false){
-     echo $numCeil = ceil($numCeil);
-     echo $x = 1;
+      $numCeil = ceil($numCeil);
+      $x = 1;
 }
     while($numCeil > 0 and $totalCursosBasicos > 0){ ?>
     <div class="row center  d-flex justify-content-center">

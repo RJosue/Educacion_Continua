@@ -4,11 +4,11 @@ include 'conexion.php';
 include 'validar.php'; 
 
 $id_curso = $_POST['id_curso'];
+$id_usuario = $_SESSION['id'];
 $cantUsuarioEnCapacitacion = $conexion->prepare("SELECT COUNT(*) FROM capacitaciones ca INNER JOIN usuarios_capacitaciones uc on ca.id = uc.id_capacitacion where  ca.id = ?");
 $cantUsuarioEnCapacitacion->execute([$id_curso]);
 //$resultados = $cantUsuarioEnCapacitacion->fetch();
 $cantUsuarioEnCapacitacion = $cantUsuarioEnCapacitacion->fetchColumn();
-$_SESSION['cantCapacitacion'] = $cantUsuarioEnCapacitacion;
 if($cantUsuarioEnCapacitacion == 0)
 {
     $sql = "insert into usuarios_capacitaciones (id_usuario, id_capacitacion) values ('$id_usuario','$id_curso')";
