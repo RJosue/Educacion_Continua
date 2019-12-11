@@ -59,6 +59,7 @@
               <li><a href="php/diplomados.php">Diplomados</a></li>
               <li><a href="php/cisco.php">Cisco</a></li>
               <li><a href="php/techacademy.php">Tech Academy</a></li>
+              <li><a href="php/cursos_basicos.php">Cursos básicos</a></li>
             </ul>
           </li>
           <li class="menu-has-children"><a href="#">Administracion</a>

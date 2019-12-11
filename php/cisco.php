@@ -2,13 +2,11 @@
 $titulo = "Academia CISCO";
 include '_header.php';
 include 'conexion.php';
-
 $ClasificacionCisco = $conexion->prepare("select COUNT(*) as 'total' from clasificacion_cisco");
 $ClasificacionCisco->execute();
 $ClasificacionCisco = $ClasificacionCisco->fetch();
 $totalClasificacionCisco = $ClasificacionCisco["total"];
 $contClasificacionCisco = $totalClasificacionCisco - $totalClasificacionCisco;
-echo $totalClasificacionCisco;
 
 ?>
 
@@ -72,7 +70,7 @@ echo $totalClasificacionCisco;
         <?php $cards = 3;
         while($cards > 0){
             $contClasificacionCisco = $contClasificacionCisco + 1;
-            $clasf = $conexion->prepare("select ca.id, ca.nombre, ca.descripcion, ca.costo, ca.duracion, clci.clasificacion from capacitaciones ca
+            $clasf = $conexion->prepare("select ca.id, ca.nombre, ca.foto, ca.descripcion, ca.costo, ca.duracion, clci.clasificacion from capacitaciones ca
             INNER JOIN cisco ci on ci.id = ca.id
             INNER JOIN clasificacion_cisco clci on clci.id = ci.id_clasificacion
             WHERE clci.id = ?");
@@ -82,7 +80,7 @@ echo $totalClasificacionCisco;
             if($totalRegistro!=0){
 ?>
                 <div class="card mt-3 ">
-                    <img src="../img/redes.jpg" class="card-img-top" alt="...">
+                    <img src="../img/<?php echo $resultados["foto"] ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $resultados["clasificacion"]?></h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repellat animi. Fugit, ratione! Consequatur vero distinctio libero perspiciatis accusamus. </p>
@@ -154,8 +152,21 @@ echo $totalClasificacionCisco;
                                                 </ul>
                                             </div>  
                                         </blockquote>
+                                        <blockquote class="blockquote mb-0 mt-4">
+                                            <div class="card" style="width: 100%;">
+                                            <div class="card-header">
+                                            Pago
+                                            </div>
+                                                <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">Total: <?php echo $resultados["costo"] ?></li>
+                                                </ul>
+                                            </div>  
+                                        </blockquote>
                                     </div>
-                                    <button type="buttons" class="btn btn-secondary">INSCRIBIRSE</button>
+                                    <form action="agregar_usuario_capacitacion.php" method="POST">
+                                        <input type="hidden" name="id_curso" value="<?php echo $resultados["id"]; ?>"/>
+                                        <button type="buttons" class="btn btn-secondary" >INSCRIBIRSE</button>                                                                        
+                                    </form>
                                 </div>
                             </div>
                         </div>
