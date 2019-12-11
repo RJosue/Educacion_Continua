@@ -7,7 +7,7 @@ include 'validar.php';
 $idDelCurso = $_GET['idCurso'];
  // Store the cipher method 
  $ciphering = "AES-128-CTR"; 
-$options = 10;
+$options = 1gi0;
  // Use OpenSSl Encryption method 
  $iv_length = openssl_cipher_iv_length($ciphering); 
 $decryption_iv = '0234789057295120'; 
